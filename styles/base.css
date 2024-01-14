@@ -1,0 +1,117 @@
+html {
+    font-family: 'Roboto', serif;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 50%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(25, 253, 25);
+    border-radius: 5px 5px 0% 0%;
+    border:  solid black 1px;
+}
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    align-self: center;
+    margin: 0 10% 0 0;
+}
+
+header img {
+    margin: 0 0 0 5%;
+}
+
+nav {
+    width: 50%;
+    flex-flow: column;
+    align-self: center;
+    align-items: center;
+    background-color: black;
+    border:  solid black 1px;
+    border-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: list-item;
+    text-align: center;
+    list-style: none;
+}
+
+nav a:hover {
+    color: black;
+    background-color: aqua;
+    font-weight: bold;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    background-color: rgb(25, 253, 25);
+    padding: 15px;
+    font-weight: bolder;
+    border-bottom: solid 1px black;
+    margin: 0;
+    border-top: 1px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.card {
+    border:  solid black 1px;
+    border-radius: 5px;
+    margin: 5% 0;
+    list-style: decimal-leading-zero;
+}
+
+ul li {
+    padding: 10px;
+    list-style: decimal-leading-zero;
+}
+
+.card p {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(25, 253, 25);
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#lastModified {
+    font-weight: bold;
+    color: red;
+}
