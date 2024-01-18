@@ -14,7 +14,7 @@ header {
     padding: 10px 0;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(25, 253, 25);
+    background-color: #5A00A3;
     border-radius: 5px 5px 0% 0%;
     border:  solid black 1px;
 }
@@ -25,7 +25,7 @@ header img {
 
 header h1 {
     align-self: center;
-    margin: 0 10% 0 0;
+    color: white;
 }
 
 header img {
@@ -71,7 +71,8 @@ h2 {
 
 h3 {
     text-align: center;
-    background-color: rgb(25, 253, 25);
+    color: white;
+    background-color: #5A00A3;
     padding: 15px;
     font-weight: bolder;
     border-bottom: solid 1px black;
@@ -98,7 +99,7 @@ ul li {
 }
 
 footer {
-    background-color: rgb(25, 253, 25);
+    background-color: #5A00A3;
     margin: 0 auto;
     width: 50%;
     display: flex;
@@ -109,9 +110,10 @@ footer p{
     margin: 10px;
     padding: 10px;
     text-align: center;
+    color: white;
 }
 
 #lastModified {
     font-weight: bold;
-    color: red;
+    color: #00F096;
 }
