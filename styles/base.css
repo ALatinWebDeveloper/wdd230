@@ -2,20 +2,11 @@ html {
     font-family: 'Roboto', serif;
 }
 
-body {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 header {
-    width: 50%;
     padding: 10px 0;
     display: flex;
     justify-content: space-evenly;
     background-color: #5A00A3;
-    border-radius: 5px 5px 0% 0%;
     border:  solid black 1px;
 }
 header img {
@@ -26,20 +17,33 @@ header img {
 header h1 {
     align-self: center;
     color: white;
-}
-
-header img {
-    margin: 0 0 0 5%;
+    width: min-content;
+    text-align: center;
 }
 
 nav {
-    width: 50%;
     flex-flow: column;
     align-self: center;
     align-items: center;
     background-color: black;
     border:  solid black 1px;
     border-top: 0px;
+    justify-content: center;
+    justify-items: center;
+}
+
+nav ul {
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px 0;
+    flex: 1 1 100%;
 }
 
 a {
@@ -49,24 +53,16 @@ a {
 nav a {
     color: white;
     padding: 10px;
-    display: list-item;
+    display: block;
     text-align: center;
     list-style: none;
+    width: -webkit-fill-available;
 }
 
-nav a:hover {
+nav li:hover {
     color: black;
     background-color: aqua;
     font-weight: bold;
-}
-
-main {
-    width: 50%;
-    margin: 0 auto;
-}
-
-h2 {
-    text-align: center;
 }
 
 h3 {
@@ -85,11 +81,12 @@ h3 {
 .card {
     border:  solid black 1px;
     border-radius: 5px;
-    margin: 5% 0;
     list-style: decimal-leading-zero;
+    margin: 5% auto;
+    min-height: 20rem;
 }
 
-ul li {
+section ul li {
     padding: 10px;
     list-style: decimal-leading-zero;
 }
@@ -101,7 +98,6 @@ ul li {
 footer {
     background-color: #5A00A3;
     margin: 0 auto;
-    width: 50%;
     display: flex;
     flex-direction: column;
 }
