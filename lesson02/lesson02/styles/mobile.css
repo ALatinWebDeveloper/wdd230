@@ -1,0 +1,9 @@
+@media only screen and (max-width: 36em) {
+    main {
+        display: grid;
+        grid-gap: 1em;
+        grid-template: 1fr / 1fr;
+        margin: 1em auto;
+        width: 90%;
+    }
+}
