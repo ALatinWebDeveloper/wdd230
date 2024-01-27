@@ -1,0 +1,45 @@
+img {
+    width: 100%;
+}
+
+html {
+    font-family: 'Roboto', serif;
+}
+
+header {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #5A00A3;
+    border:  solid black 1px;
+}
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+nav {
+    flex-flow: column;
+    align-self: center;
+    align-items: center;
+    background-color: black;
+    border:  solid black 1px;
+    border-top: 0px;
+    justify-content: center;
+    justify-items: center;
+    display: none;
+}
+
+nav ul {
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    list-style: none;
+    flex: 1 1 100%;
+}

@@ -1,21 +1,33 @@
 @media only screen and (min-width: 450px) {
-    body {
-      background-color: white;
-      justify-self: center;
+
+    #menu {
+      display: block;
+    }
+    
+    header img {
+      margin-right: 5rem;
     }
 
-    header, nav, main .card, footer {
-      width: 70%;
+    header {
+      justify-content: center;
     }
 
     header, nav, footer {
       margin: 0 auto;
     }
 
+    header, nav, .card, footer {
+      width: 90%;
+    }
+
     nav ul {
         display: flex;
     }
     
+    #menuButton {
+      display: none;
+    }
+
     .card {
     grid-row: 3;
     }
@@ -24,7 +36,7 @@
       margin: 0 auto;
       display: grid;
       grid-auto-columns: 1fr;
-      width: 70%;
+      width: 100%;
   }
   
   h2 {
@@ -35,5 +47,10 @@
   hr {
       width: 100%;
       grid-column: 1 / span 2;
+  }
+  iframe {
+    width: 90%;
+    margin: 0 1rem 0 0 auto;
+    display: block;
   }
   }

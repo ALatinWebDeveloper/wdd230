@@ -7,3 +7,13 @@ document.getElementById("lastModified").textContent = "Last Modification: " + la
 
 let footer = document.getElementsByTagName('p')[2];
 footer.innerHTML += ' © ' + CopyYear;
+
+const menuButton = document.querySelector("#menuButton");
+const menu = document.querySelector("#menu");
+const map = document.querySelector("#map");
+
+menuButton.addEventListener("click", () => {
+	menuButton.classList.toggle('open');
+    menu.classList.toggle("open");
+    map.classList.toggle("notDisplayed");
+});
