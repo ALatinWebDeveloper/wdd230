@@ -90,6 +90,11 @@ section img {
     border-radius: 10px;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 h2 {
     text-align: center;
 }
