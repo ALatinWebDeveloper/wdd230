@@ -100,10 +100,12 @@ h2 {
 }
 
 section {
+    border-radius: 5px;
     padding: 1rem;
     width: 80%;
     margin: 2rem auto;
     text-align: center;
+    border: solid 1px black;
 }
 
 section h2 {
@@ -119,29 +121,11 @@ section p {
     padding: 0.5rem;
 }
 
-.hero {
-    border-radius: 5px;
-    border: solid 1px black;
-}
-
-.call {
-    border-radius: 5px;
-    border: solid 1px black;
-}
-
-.events {
-    border-radius: 5px;
-    border: solid 1px black;
-}
-
-.weather {
-    padding: 1rem;
-}
-
 .spotlights {
     display: grid;
     grid-template: 1fr / 1fr;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
+    border: none;
 }
 
 .member {

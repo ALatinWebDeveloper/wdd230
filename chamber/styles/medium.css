@@ -1,0 +1,14 @@
+@media only screen and (min-width: 36.01em) and (max-width: 48em) {
+    .spotlights {
+        grid-template: 2rem 1fr 1fr/ 1fr 1fr;
+    }
+
+    .spotlights h2 {
+        grid-area: 1 / span 2;
+        height: max-content;
+    }
+
+    .memberLast {
+        grid-area: 2 / span 2;
+    }
+}
