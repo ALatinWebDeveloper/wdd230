@@ -11,9 +11,16 @@ footer.innerHTML += ' © ' + CopyYear;
 const menuButton = document.querySelector("#menuButton");
 const menu = document.querySelector("#menu");
 const map = document.querySelector("#map");
+map.html
 
 menuButton.addEventListener("click", () => {
-	menuButton.classList.toggle('open');
+    menuButton.classList.toggle('open');
     menu.classList.toggle("open");
     map.classList.toggle("notDisplayed");
 });
+
+const section = document.createElement('section');
+const h3 = document.createElement('h3');
+h3.textContent = 'Relief Society';
+
+section.appendChild(h3);
