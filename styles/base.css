@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 html {
     font-family: 'Roboto', serif;
 }
@@ -7,8 +9,9 @@ header {
     display: flex;
     justify-content: center;
     background-color: #5A00A3;
-    border:  solid black 1px;
+    border: solid black 1px;
 }
+
 header img {
     width: 100px;
     height: auto;
@@ -26,7 +29,7 @@ nav {
     align-self: center;
     align-items: center;
     background-color: black;
-    border:  solid black 1px;
+    border: solid black 1px;
     border-top: 0px;
     justify-content: center;
     justify-items: center;
@@ -45,18 +48,18 @@ nav ul {
     margin: 0;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     flex: 1 1 100%;
 }
 
 #menuButton {
     font-size: 2rem;
-	border: 0;
-	background: none;
- 	position: absolute;
-	top: 1.1rem;
-	right: 1rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1.1rem;
+    right: 1rem;
     color: white;
 }
 
@@ -91,6 +94,32 @@ nav li:hover {
     display: none;
 }
 
+#heroImg {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+#heroImg img {
+    width: 100%;
+    height: 100%;
+}
+
+#heroLable {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+}
+
+#heroLable {
+    font-family: "Great Vibes", serif;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0 1rem;
+    border: solid white 1px;
+}
+
 h2 {
     text-align: center;
 }
@@ -109,7 +138,7 @@ h3 {
 }
 
 .card {
-    border:  solid black 1px;
+    border: solid black 1px;
     border-radius: 5px;
     list-style: decimal-leading-zero;
     margin: 2rem auto;
@@ -139,7 +168,7 @@ footer {
     flex-direction: column;
 }
 
-footer p{
+footer p {
     margin: 10px;
     padding: 10px;
     text-align: center;

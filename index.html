@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descritpion"
+    <meta name="description"
         content="This is my course assignment portal for WDD 230 - Web Frontend Development course by Juan Betancourt">
     <meta name="author" content="Juan Betancourt">
 
@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <img src="images/profile_pic.jpg" alt="My profile pic">
+        <img src="images/profile_pic.webp" alt="My profile pic">
         <h1>Juan Betancourt</h1>
     </header>
     <button id="menuButton"></button>
@@ -38,6 +38,17 @@
         </ul>
     </nav>
     <main>
+        <div id="heroImg">
+            <picture>
+                <source media="(max-width: 450px)" srcset="images/templeMobile.webp">
+                <source media="(min-width: 450px)" srcset="images/templePc.webp">
+                <img src="images/cordoba_argentina_temples_buildings.webp" alt="temple">
+            </picture>
+
+            <div id="heroLable">
+                <p>Cordoba Argentina Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
         <section class="card">
@@ -45,8 +56,8 @@
             <ul>
                 <li><a href="lesson01/holygrail.html">Holygrail Layout</a></li>
                 <li><a href="lesson02/design.html">Web Design Principles</a> | <a
-                        href="lesson02/lesson02/design-principles.html">Designe principles page</a></li>
-                <li><a href="images/combinators.png">Learning Activity</a></li>
+                        href="lesson02/design-principles.html">Designe principles page</a></li>
+                <li><a href="images/combinators.webp">Learning Activity</a></li>
                 <li><a href="https://codepen.io/ALatinWebDeveloper/pen/GReMMjy">CSS Pseudo-elements</a></li>
                 <li><a href="https://codepen.io/ALatinWebDeveloper/pen/poYWWdM">Responsive Menu</a> | <a
                         href="lesson05/bom.html">Book of Mormon Favorite Chapters Application</a></li>
