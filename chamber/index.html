@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my business chamber site, created for my WDD230 web developement course. It is a page for a international chamber of commerce, it aims to promote business and the built of networks between business from all around the American continent">
+    <meta name="description"
+        content="This is my business chamber site, created for my WDD230 web developement course. It is a page for a international chamber of commerce, it aims to promote business and the built of networks between business from all around the American continent">
     <meta name="author" content="Juan Betancourt">
 
     <link rel="stylesheet" href="styles/base.css">
@@ -24,7 +25,8 @@
 <body>
     <header>
         <button name="menu button" id="menuButton"><img src="images/openMenu.png" alt="menu button img"></button>
-        <a href="index.html"><img class="logo" src="images/placeholderLogo.png" alt="Pan American Chamber of Commerce Logo"></a>
+        <a href="index.html"><img class="logo" src="images/placeholderLogo.webp"
+                alt="Pan American Chamber of Commerce Logo"></a>
         <button name="darkMode" id="darkMode"><img src="images/darkmode.png" alt="Night mode button"></button>
     </header>
 
@@ -43,7 +45,11 @@
         <button name="darkMode" id="darkPcMode"><img src="images/darkmode.png" alt="Night mode button"></button>
         <section class="hero">
             <h2>Hero section</h2>
-            <img src="images/heroPlaceholder.jpg" alt="Main image of the company">
+            <picture>
+                <source srcset="images/large.webp" media="(min-width: 550px)">
+                <source srcset="images/medium.webp" media="(min-width: 465px)">
+                <img src="images/small.webp" alt="Main image of the company">
+            </picture>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio qui maxime tempora sed perspiciatis
                 exercitationem incidunt non. Iusto ratione inventore dicta voluptate minima veniam cupiditate placeat,
                 exercitationem fuga nesciunt tempore.</p>
@@ -51,7 +57,7 @@
 
         <section class="call">
 
-            <img src="images/heroPlaceholder.jpg" alt="call to action placeholder">
+            <img src="images/heroPlaceholder.webp" alt="call to action placeholder">
             <h2>Call to action</h2>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, et earum laudantium saepe nisi eos
@@ -65,7 +71,7 @@
 
         <section class="events">
             <h2>Current events section</h2>
-            <img src="images/heroPlaceholder.jpg" alt="current events placeholder">
+            <img src="images/heroPlaceholder.webp" alt="current events placeholder">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur voluptas sapiente nesciunt
                 fuga dolore voluptatum accusamus quidem commodi, eaque suscipit corrupti. Eum, nemo. Ad doloribus
                 mollitia ipsa asperiores! Maxime!</p>
@@ -73,14 +79,17 @@
 
         <section class="weather">
             <h2>⛅Weather⛅</h2>
-            <img src="images/weatherPlaceholder.jfif" alt="weather placeholder image">
+            <img src="images/weatherPlaceholder.webp" alt="weather placeholder image">
+            
+            <p id="windChill">0 🌬️❄️</p>
+
         </section>
 
         <section class="spotlights">
             <h2>spotlights</h2>
 
             <div class="member">
-                <img src="images/weatherPlaceholder.jfif" alt="member photo placeholder image">
+                <img src="images/weatherPlaceholder.webp" alt="member photo placeholder image">
                 <h3>Michael Afton</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed reiciendis nostrum blanditiis
                     laboriosam porro voluptate corporis quo soluta quidem impedit laborum, veniam non ipsam assumenda!
@@ -88,15 +97,15 @@
             </div>
 
             <div class="member">
-                <img src="images/weatherPlaceholder.jfif" alt="member photo placeholder image">
+                <img src="images/weatherPlaceholder.webp" alt="member photo placeholder image">
                 <h3>Michael Afton</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed reiciendis nostrum blanditiis
                     laboriosam porro voluptate corporis quo soluta quidem impedit laborum, veniam non ipsam assumenda!
                     Explicabo, aliquid quasi. Delectus, error?</p>
             </div>
 
-            <div class="memberLast member" >
-                <img src="images/weatherPlaceholder.jfif" alt="member photo placeholder image">
+            <div class="memberLast member">
+                <img src="images/weatherPlaceholder.webp" alt="member photo placeholder image">
                 <h3>Michael Afton</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed reiciendis nostrum blanditiis
                     laboriosam porro voluptate corporis quo soluta quidem impedit laborum, veniam non ipsam assumenda!
@@ -109,6 +118,7 @@
         <p id="lastModified">Last modification: </p>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
