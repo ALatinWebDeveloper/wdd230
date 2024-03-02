@@ -63,10 +63,6 @@ nav ul li {
     color: white;
 }
 
-#menuButton::before {
-    content: "☰";
-}
-
 #menuButton.open::before {
     content: "△";
 }
