@@ -4,9 +4,11 @@ const lastModifiedString = lastModified.toLocaleDateString();
 
 document.getElementById("lastModified").textContent = "Last Modification: " + lastModifiedString;
 
-
-let footer = document.getElementsByTagName('p')[2];
-footer.innerHTML += ' © ' + CopyYear;
+//Set copyright Year
+let copyrightYear = document.createElement('p');
+let footer = document.querySelector("footer");
+footer.appendChild(copyrightYear);
+copyrightYear.innerHTML += ' © ' + CopyYear;
 
 const menuButton = document.querySelector("#menuButton");
 const menu = document.querySelector("#menu");
@@ -24,3 +26,18 @@ const h3 = document.createElement('h3');
 h3.textContent = 'Relief Society';
 
 section.appendChild(h3);
+
+// Number of visits
+
+const visitDisplay = document.querySelector(".visits");
+let nbrVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (nbrVisits != 0) {
+    visitDisplay.textContent = nbrVisits;
+} else {
+    visitDisplay.textContent = `This is your first visit. 🥳 Thank you!`;
+}
+
+nbrVisits++;
+
+localStorage.setItem("nbrVisits-ls", nbrVisits);
