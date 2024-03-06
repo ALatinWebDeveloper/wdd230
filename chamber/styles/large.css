@@ -46,7 +46,7 @@
         background: none;
         background-color: white;
     }
-    
+
     #darkPcMode {
         display: block;
         position: absolute;
@@ -57,6 +57,61 @@
         padding: 0.2rem;
         background: none;
         background-color: white;
+    }
+
+    /*Her*/
+
+    .hero {
+        width: 85%;
+        margin: 2rem auto;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    /*sidebar CSS*/
+
+    .sidebar {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 50% 50%;
+        margin: 0 auto;
+    }
+
+    .mainNews {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .events article {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        background-color: aquamarine;
+        border-radius: 5px;
+    }
+
+    .ilustration {
+        min-height: 700px;
+    }
+
+    .ilustration img {
+        transition: transform .2s;
+    }
+
+    .ilustration img:hover {
+        transform: scale(1.1);
+    }
+
+    .visits {
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: xx-large;
     }
 
     .call {

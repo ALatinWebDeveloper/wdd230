@@ -8,6 +8,10 @@
         height: max-content;
     }
 
+    h2 {
+        font-size: large;
+    }
+
     .memberLast {
         grid-area: 2 / span 2;
     }

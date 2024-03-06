@@ -117,6 +117,29 @@ nav ul {
     display: none;
 }
 
+.hero {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.sidebar {
+    grid-template-rows: 1fr;
+    grid-template-columns: 90%;
+    margin: 0 auto;
+}
+
+.ilustration img {
+    transition: none;
+}
+
+.ilustration img:hover {
+    transform: none;
+}
+
 section img {
     width: 100%;
     border-radius: 10px;
@@ -129,19 +152,14 @@ h1 {
 
 h2 {
     text-align: center;
+    margin: 1rem 0 1rem 0;
 }
 
 section {
     border-radius: 5px;
     padding: 1rem;
-    width: 80%;
-    margin: 2rem auto;
+    width: 90%;
     text-align: center;
-    border: solid 1px black;
-}
-
-section h2 {
-    margin-bottom: 1rem;
 }
 
 section img {
