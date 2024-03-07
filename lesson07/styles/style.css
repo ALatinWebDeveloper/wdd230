@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', serif;
+}
+
+table {
+    margin: 10vw auto;
+}
+
+caption {
+    margin: 1rem 0;
+    font-size: x-large;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    font-size: x-large;
+}
+
+.title {
+    background-color: grey;
+}
+
+td,
+th,
+table {
+    border: solid 1px black;
+    padding: 1rem;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th:nth-child(1n + 2) {
+    background-color: gray;
+}
