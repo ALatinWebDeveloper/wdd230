@@ -4,6 +4,12 @@
     font-family: Verdana, sans-serif;
 }
 
+:root {
+    --lableColor: rgb(0, 69, 126);
+    --inputBackgroundColor: #eee;
+    --inputBorderColor: #999;
+}
+
 form {
     margin: 0 auto;
     padding: 1rem;
@@ -24,7 +30,7 @@ label {
     width: 80%;
     display: block;
     padding-top: 1.5rem;
-    color: rgb(0, 69, 126);
+    color: var(--lableColor);
     font-size: 1rem;
     margin: 0 auto;
 }
@@ -45,9 +51,9 @@ input {
 .indexForm input[type="text"],
 .indexForm input[type="password"],
 .indexForm input[type="email"] {
-    background-color: #eee;
+    background-color: var(--inputBackgroundColor);
     display: block;
-    border: solid 1px #999;
+    border: solid 1px var(--inputBorderColor);
     border-radius: 6px;
     padding: .75rem;
     color: #555;

@@ -13,7 +13,7 @@ copyrightYear.innerHTML += ' © ' + CopyYear;
 const menuButton = document.querySelector("#menuButton");
 const menu = document.querySelector("#menu");
 const map = document.querySelector("#map");
-map.html
+
 
 menuButton.addEventListener("click", () => {
     menuButton.classList.toggle('open');
