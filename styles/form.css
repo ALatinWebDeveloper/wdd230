@@ -118,6 +118,7 @@ input {
     border: solid 1px white;
     border-radius: 6px;
     background-color: rgb(9, 129, 9);
+    font-size: large;
     margin: 0 auto;
     display: block;
     padding: .75rem;
