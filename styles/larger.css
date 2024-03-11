@@ -74,4 +74,23 @@
     margin: 0 1rem 0 0 auto;
     display: block;
   }
+
+  /*----------Form Large view-----------*/
+
+  form {
+    width: 50%;
+  }
+
+  label {
+    width: 77%;
+  }
+
+  .indexForm input[type="range"] {
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  #rangeValues {
+    margin: 0 0 1rem 0;
+  }
+
 }

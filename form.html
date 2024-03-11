@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/profile_pic.webp" alt="My profile pic">
+        <h1>Juan Betancourt</h1>
+    </header>
+    <button id="menuButton">☰</button>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a target="_blank" href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a target="_blank"
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <form method="get" action="record.html" class="indexForm">
+        <fieldset>
+            <legend>Rate our page</legend>
+            <label>User Name*<input type="text" name="userName" id="userName" required></label>
+            <label>Pasword*<input type="password" name="pasword" id="pasword" pattern="[a-zA-Z0-9].{8,}"
+                    required></label>
+            <label>Pasword Confirmation*<input type="password" name="paswordConf" id="paswordConf" class=""
+                    pattern="[a-zA-Z0-9].{8,}" required></label>
+            <p id="alert" class="hide">The passwords DO NOT MATCH❗</p>
+            <label>Email*<input type="email" name="email" id="email" class="" pattern="[a-zA-Z0-9_.\-]+@byui.edu"
+                    placeholder="Your byui email address" required title="A valid byui.edu email address."></label>
+            <div id="range">
+                <label id="casa">Page Rating*<input id="rating" type="range" name="rate" min="0" max="10" step="1" value="0"
+                    list="rangeValues"></label>
+                <p id="rate"></p>
+                <datalist id="rangeValues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </div>
+        </fieldset>
+
+        <input type="submit" name="submit" id="submitBtn" value="Rate Page">
+    </form>
+
+    <footer>
+        <p>Juan Betancourt Venezuela</p>
+        <p id="lastModified">Last modification: </p>
+    </footer>
+    
+    <script src="lesson07/js/scripts.js"></script>
+</body>
+
+</html>
