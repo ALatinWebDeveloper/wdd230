@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is my course assignment portal for WDD 230 - Web Frontend Development course by Juan Betancourt">
+    <meta name="author" content="Juan Betancourt">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Juan Betancourt - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/10/16/22/10/venezuela-991906_1280.jpg">
+    <meta property="og:url" content="https://alatinwebdeveloper.github.io/wdd230/">
+    <title>Juan Betancourt - WDD 230 - Web Frontend Development</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/profile_pic.webp" alt="My profile pic">
+        <h1>Juan Betancourt</h1>
+    </header>
+    <button id="menuButton">☰</button>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a target="_blank" href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a target="_blank"
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h1>Join Now!</h1>
+
+        <form method="get" action="thankyou.html" class="joinForm">
+
+            <fieldset>
+
+                <legend>Aplicant Information</legend>
+
+                <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                <label>Title or Position*<input type="text" name="position" id="position"
+                        pattern="^\b[a-zA-Z\- ]{7,}\b$" required></label>
+                <label>Email*<input type="email" name="email" id="" placeholder="example@gmail.com" required></label>
+                <label>Business/Organization*<input type="text" name="business" id="business" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" id="np" value="np">NP Membership</label>
+                <label><input type="radio" name="membership" id="bronze" value="bronze">Bronze Membership</label>
+                <label><input type="radio" name="membership" id="silver" value="silver">Silver Membership</label>
+                <label><input type="radio" name="membership" id="gold" value="gold">Gold Membership</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Description</legend>
+                <label>Business/Organization's description<textarea name="description" id="description" cols="30"
+                        rows="10"></textarea> </label>
+
+                <input type="hidden" name="date" id="date">
+            </fieldset>
+
+            <input type="submit" name="" value="Propose My Course">
+
+        </form>
+
+        <div class="membershipDisplay">
+
+            <div class=" tierMessage show">Select a tier to view it's benefits</div>
+
+            <article class="membTier hidden">
+                <img src="images/unranked.webp" alt="">
+                <p><b>The Supporter Tier</b> is perfect for individuals who want to contribute to your nonprofit's
+                    mission. As a Supporter, they'll receive basic benefits and stay connected with your organization.
+                </p>
+                <ol>
+                    <li><b>Newsletter Subscription:</b> Regular updates on your nonprofit's activities and impact.</li>
+                    <li><b>Invitations to Events:</b> Attend virtual or in-person events.</li>
+                    <li><b>Recognition:</b> Acknowledgment on your website or in annual reports.
+                    </li>
+                    <li><b>Priority Referrals:</b> Be recommended to potential clients and partners.</li>
+                    <li><b>Price:</b> Free (or optional small donation).</li>
+                </ol>
+            </article>
+
+            <article class="membTier hidden">
+                <img src="images/bronze.webp" alt="">
+                <p><b>Business Explorer Tier</b> is ideal for businesses and entrepreneurs who want to explore the
+                    benefits
+                    of Chamber membership. As a Business Explorer, you'll gain access to essential resources and
+                    networking opportunities.</p>
+                <ol>
+                    <li><b>Basic Resources:</b> Access to foundational business guides, legal templates, and industry
+                        reports.
+                    </li>
+                    <li><b>Local Networking Events:</b> Attend Chamber-hosted networking events and connect with fellow
+                        business owners.</li>
+                    <li><b>Business Directory Listing:</b> Get listed in our online business directory.</li>
+                    <li><b>Price:</b> $9.99/month.</li>
+                </ol>
+            </article>
+
+            <article class="membTier hidden">
+                <img src="images/silver.webp" alt="">
+                <p><b> Business Trailblazer Tier</b> is for businesses ready to take their involvement to the next
+                    level. As
+                    a Trailblazer, you'll enjoy additional perks and visibility within the business community.</p>
+                <ol>
+                    <li><b>Access everything</b> from the Business Explorer Tier.</li>
+                    <li><b>Exclusive Workshops:</b> Participate in specialized workshops on topics like marketing,
+                        finance, and
+                        leadership.</li>
+                    <li><b>Featured Spotlight:</b> Your business highlighted in our monthly newsletter and on social
+                        media.
+                    </li>
+                    <li><b>Priority Referrals:</b> Be recommended to potential clients and partners.</li>
+                    <li><b>Price:</b> $24.99/month.</li>
+                </ol>
+            </article>
+
+            <article class="membTier hidden">
+                <img src="images/gold.webp" alt="">
+                <p><b>The Business Summit Elite Tier</b> represents the pinnacle of Chamber membership. It's designed
+                    for
+                    established businesses and industry leaders seeking unparalleled access and recognition.</p>
+                <ol>
+                    <li><b>All Business Trailblazer Benefits:</b> Access all features from the Business Trailblazer
+                        Tier.</li>
+                    <li><b>Mastermind Sessions:</b> Exclusive strategy sessions with industry experts.</li>
+                    <li><b>VIP Events:</b> Invitations to high-profile business events and galas.</li>
+                    <li><b>Business Showcase:</b> Featured prominently on our website and at Chamber events.</li>
+                    <li><b>Price:</b> $49.99/month.</li>
+                </ol>
+            </article>
+        </div>
+
+    </main>
+    <footer>
+        <p>Juan Betancourt Venezuela</p>
+        <p id="lastModified">Last modification: </p>
+    </footer>
+    <script src="scripts/join.js"></script>
+</body>
+
+</html>
