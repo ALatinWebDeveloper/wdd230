@@ -247,6 +247,7 @@ legend {
 
 .joinForm input[type="text"],
 .joinForm input[type="email"],
+.joinForm input[type="tel"],
 .joinForm textarea {
 
     display: block;
