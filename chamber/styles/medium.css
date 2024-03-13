@@ -38,4 +38,11 @@
         background: none;
         background-color: white;
     }
+
+    /*---------- Styling the form ----------*/
+
+    main {
+        grid-template-columns: 100%;
+        width: 100%;
+    }
 }

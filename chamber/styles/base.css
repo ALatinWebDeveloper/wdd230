@@ -191,3 +191,146 @@ footer {
     border-top: solid black 1px;
     padding: 0.5rem;
 }
+
+/*---------- Styling the form ----------*/
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*---------- Join Form Large view -----------*/
+
+h1 {
+    text-align: center;
+    grid-area: 1 / span 2;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+.joinForm {
+    width: 90%;
+    margin: 1rem 0;
+    border: solid 1px black;
+    border-radius: 6px;
+    padding: 1rem;
+    height: fit-content;
+}
+
+fieldset {
+    padding: 2rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+label {
+    width: 77%;
+    color: blueviolet;
+}
+
+.tierSelector {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+legend {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.joinForm input[type="text"],
+.joinForm input[type="email"],
+.joinForm textarea {
+
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    margin: 5px 0 1rem 0;
+    resize: none;
+    box-sizing: border-box;
+    border: #999 solid 1px;
+}
+
+.joinForm input[type="submit"] {
+
+    padding: 1rem;
+    width: 50%;
+    margin: 0 23%;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    background-color: #00acf0;
+    border-radius: 6px;
+    border: solid 1px black;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px #999;
+}
+
+.joinForm input[type="radio"] {
+    margin-right: .3rem;
+}
+
+/*---------- ^ Join Form Large view ^ -----------*/
+
+/*----------  Styling the tiers ----------*/
+
+.membTier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 6px;
+    border: solid 1px black;
+    padding: 1rem;
+    position: sticky;
+    top: 5rem;
+}
+
+.membTier li {
+    padding: .5rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: none;
+}
+
+.tierMessage {
+
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    color: #ff1717;
+    font-weight: bolder;
+    position: fixed;
+    margin-left: 0.4rem;
+}
+
+.membTier img {
+
+    margin-top: -3rem;
+}
+
+.membTier ol {
+    padding: 1rem;
+}
+
+/*---------- ^ Styling the tiers ^ ----------*/
+
+.indexForm input[type="range"] {
+    margin: 1rem 1rem 1rem 0;
+}
+
+#rangeValues {
+    margin: 0 0 1rem 0;
+}

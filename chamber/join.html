@@ -9,7 +9,8 @@
     <meta name="author" content="Juan Betancourt">
 
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -23,13 +24,15 @@
 
 <body>
     <header>
-        <img src="images/profile_pic.webp" alt="My profile pic">
-        <h1>Juan Betancourt</h1>
+        <button name="menu button" id="menuButton"><img src="images/openMenu.png" alt="menu button img"></button>
+        <a href="index.html"><img class="logo" src="images/placeholderLogo.webp"
+                alt="Pan American Chamber of Commerce Logo"></a>
+        <button name="darkMode" id="darkMode"><img src="images/darkmode.png" alt="Night mode button"></button>
     </header>
-    <button id="menuButton">☰</button>
+
     <nav id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <ul id="menuOptions">
+            <li><a href="#">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="chamber/">Chamber</a></li>
             <li><a target="_blank" href="https://www.byui.edu/">BYU-Idaho</a></li>
@@ -38,7 +41,7 @@
         </ul>
     </nav>
     <main>
-
+        <button name="darkMode" id="darkPcMode"><img src="images/darkmode.png" alt="Night mode button"></button>
         <h1>Join Now!</h1>
 
         <form method="get" action="thankyou.html" class="joinForm">
@@ -55,7 +58,7 @@
                 <label>Business/Organization*<input type="text" name="business" id="business" required></label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="tierSelector">
                 <legend>Membership Level</legend>
                 <label><input type="radio" name="membership" id="np" value="np">NP Membership</label>
                 <label><input type="radio" name="membership" id="bronze" value="bronze">Bronze Membership</label>
@@ -65,13 +68,13 @@
 
             <fieldset>
                 <legend>Description</legend>
-                <label>Business/Organization's description<textarea name="description" id="description" cols="30"
+                <label>Business/Organization's description*<textarea name="description" id="description" cols="30"
                         rows="10"></textarea> </label>
 
-                <input type="hidden" name="date" id="date">
+                <input type="hidden" name="date" id="date" value="Date.now">
             </fieldset>
 
-            <input type="submit" name="" value="Propose My Course">
+            <input type="submit" name="" value="Join">
 
         </form>
 
@@ -148,7 +151,6 @@
     </main>
     <footer>
         <p>Juan Betancourt Venezuela</p>
-        <p id="lastModified">Last modification: </p>
     </footer>
     <script src="scripts/join.js"></script>
 </body>

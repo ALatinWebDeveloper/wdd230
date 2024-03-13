@@ -1,4 +1,4 @@
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 48.1em) {
     body {
         display: grid;
         grid-template: 1fr /15% 1fr;
@@ -153,5 +153,132 @@
 
     footer {
         grid-column-start: 2;
+    }
+
+    /*---------- Join Form Large view -----------*/
+
+    main {
+        grid-template-columns: 60% 40%;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        grid-area: 1 / span 2;
+        font-size: xxx-large;
+        font-weight: bolder;
+    }
+
+    .joinForm {
+        width: fit-content;
+        margin: 1rem 0 1rem 1rem;
+        border: solid 1px black;
+        border-radius: 6px;
+        padding: 1rem;
+        height: fit-content;
+    }
+
+    fieldset {
+        padding: 2rem;
+        border-radius: 6px;
+        margin: 1rem 0;
+    }
+
+    label {
+        width: fit-content;
+        color: blueviolet;
+        padding: 0.5rem;
+    }
+
+    .tierSelector {
+        display: flex;
+
+    }
+
+    legend {
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    .joinForm input[type="text"],
+    .joinForm input[type="email"],
+    .joinForm textarea {
+
+        display: block;
+        padding: .75rem;
+        width: 90%;
+        margin: 5px 0 1rem 2rem;
+        resize: none;
+    }
+
+    .joinForm input[type="submit"] {
+
+        padding: 1rem;
+        width: 50%;
+        margin: 0 23%;
+        font-weight: bold;
+        font-size: large;
+        text-align: center;
+        background-color: #00acf0;
+        border-radius: 6px;
+        border: solid 1px black;
+        cursor: pointer;
+        box-shadow: 1px 2px 5px #999;
+    }
+
+
+
+    /*---------- ^ Join Form Large view ^ -----------*/
+
+    /*----------  Styling the tiers ----------*/
+
+    .membTier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        border-radius: 6px;
+        border: solid 1px black;
+        padding: 1rem;
+        position: sticky;
+        top: 5rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .tierMessage {
+
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.9rem;
+        color: #ff1717;
+        font-weight: bolder;
+        position: fixed;
+        margin-left: 0.4rem;
+    }
+
+    .membTier img {
+
+        margin-top: -3rem;
+    }
+
+    .membTier ol {
+        padding: 1rem;
+    }
+
+    /*---------- ^ Styling the tiers ^ ----------*/
+
+    .indexForm input[type="range"] {
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    #rangeValues {
+        margin: 0 0 1rem 0;
     }
 }
