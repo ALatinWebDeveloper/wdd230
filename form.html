@@ -26,6 +26,7 @@
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="chamber/">Chamber</a></li>
             <li><a target="_blank" href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a target="_blank" href="form.html">Rate my site!</a></li>
             <li><a target="_blank"
                     href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng">Scripture</a></li>
         </ul>
@@ -34,16 +35,16 @@
     <form method="get" action="record.html" class="indexForm">
         <fieldset>
             <legend>Rate our page</legend>
-            <label>User Name*<input type="text" name="userName" id="userName" required></label>
-            <label>Pasword*<input type="password" name="pasword" id="pasword" pattern="[a-zA-Z0-9].{8,}"
+            <label for="userName">User Name*<input type="text" name="userName" id="userName" required></label>
+            <label for="pasword">Pasword*<input type="password" name="pasword" id="pasword" pattern="[a-zA-Z0-9].{8,}"
                     required></label>
-            <label>Pasword Confirmation*<input type="password" name="paswordConf" id="paswordConf" class=""
+            <label for="paswordConf">Pasword Confirmation*<input type="password" name="paswordConf" id="paswordConf" class=""
                     pattern="[a-zA-Z0-9].{8,}" required></label>
             <p id="alert" class="hide">The passwords DO NOT MATCH❗</p>
-            <label>Email*<input type="email" name="email" id="email" class="" pattern="[a-zA-Z0-9_.\-]+@byui.edu"
+            <label for="email">Email*<input type="email" name="email" id="email" class="" pattern="[a-zA-Z0-9_.\-]+@byui.edu"
                     placeholder="Your byui email address" required title="A valid byui.edu email address."></label>
             <div id="range">
-                <label id="casa">Page Rating*<input id="rating" type="range" name="rate" min="0" max="10" step="1" value="0"
+                <label for="rate" id="casa">Page Rating*<input id="rating" type="range" name="rate" min="0" max="10" step="1" value="0"
                     list="rangeValues"></label>
                 <p id="rate"></p>
                 <datalist id="rangeValues">
