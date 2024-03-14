@@ -1,0 +1,33 @@
+{
+    "familyName": "Afton",
+    "movedDate": "1945-04-14",
+    "NumberOfMembers": "5",
+    "visitedByBishopric": true,
+    "IndividualMembers": [
+        {
+            "name": "Michael Afton",
+            "gender": "Male",
+            "birthDate": "1902-09-30"
+        },
+        {
+            "name": "Eva Afton",
+            "gender": "Female",
+            "birthDate": "1899-03-25"
+        },
+        {
+            "name": "Emily Afton",
+            "gender": "Female",
+            "birthDate": "1932-01-20"
+        },
+        {
+            "name": "Evan Afton",
+            "gender": "Male",
+            "birthDate": "1927-05-03"
+        },
+        {
+            "name": "Jacob Afton",
+            "gender": "Male",
+            "birthDate": "1940-0-25"
+        }
+    ]
+}

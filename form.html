@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="This is the page to rate my site for WDD 230 - Web Frontend Development course by Juan Betancourt">
+        content="In this site there is a form for the user to rate my site made for the WDD 230 - Web Frontend Development course.">
     <meta name="author" content="Juan Betancourt">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -38,14 +38,15 @@
             <label for="userName">User Name*<input type="text" name="userName" id="userName" required></label>
             <label for="pasword">Pasword*<input type="password" name="pasword" id="pasword" pattern="[a-zA-Z0-9].{8,}"
                     required></label>
-            <label for="paswordConf">Pasword Confirmation*<input type="password" name="paswordConf" id="paswordConf" class=""
-                    pattern="[a-zA-Z0-9].{8,}" required></label>
+            <label for="paswordConf">Pasword Confirmation*<input type="password" name="paswordConf" id="paswordConf"
+                    class="" pattern="[a-zA-Z0-9].{8,}" required></label>
             <p id="alert" class="hide">The passwords DO NOT MATCH❗</p>
-            <label for="email">Email*<input type="email" name="email" id="email" class="" pattern="[a-zA-Z0-9_.\-]+@byui.edu"
-                    placeholder="Your byui email address" required title="A valid byui.edu email address."></label>
+            <label for="email">Email*<input type="email" name="email" id="email" class=""
+                    pattern="[a-zA-Z0-9_.\-]+@byui.edu" placeholder="Your byui email address" required
+                    title="A valid byui.edu email address."></label>
             <div id="range">
-                <label for="rate" id="casa">Page Rating*<input id="rating" type="range" name="rate" min="0" max="10" step="1" value="0"
-                    list="rangeValues"></label>
+                <label for="rate" id="casa">Page Rating*<input id="rating" type="range" name="rate" min="0" max="10"
+                        step="1" value="0" list="rangeValues"></label>
                 <p id="rate"></p>
                 <datalist id="rangeValues">
                     <option value="0">0</option>
