@@ -28,10 +28,6 @@
                 {
                     "url": "images/combinators.webp",
                     "title": "CSS Combinators"
-                },
-                {
-                    "url": "https://codepen.io/ALatinWebDeveloper/pen/GReMMjy",
-                    "title": "CSS Pseudo-elements"
                 }
             ]
         },
@@ -39,12 +35,8 @@
             "lesson": "04",
             "links": [
                 {
-                    "url": "https://codepen.io/ALatinWebDeveloper/pen/poYWWdM",
-                    "title": "Responsive Menu"
-                },
-                {
-                    "url": "lesson05/bom.html",
-                    "title": "Book of Mormon Favorite Chapters Application"
+                    "url": "https://codepen.io/ALatinWebDeveloper/pen/GReMMjy",
+                    "title": "CSS Pseudo-elements"
                 }
             ]
         },

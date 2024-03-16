@@ -4,6 +4,7 @@ const cards = document.querySelector('#cards');
 async function getProphetData() {
     response = await fetch(url);
     data = await response.json();
+    
     //console.table(data.prophets);
     displayProphets(data.prophets);
 }
@@ -30,7 +31,7 @@ const displayProphets = (prophets) => {
         if (prophet.death != null) {
             death.innerHTML = `<b>Deceased:</b> ${prophet.death}`;
         } else {
-            death.innerHTML = `<b>Deceased:</b> N/A`;
+            death.innerHTML = ``;
         }
         
 
