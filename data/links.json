@@ -1,0 +1,96 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holygrail Layout"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Web Design Principles"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Designe principles page"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/combinators.webp",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/ALatinWebDeveloper/pen/GReMMjy",
+                    "title": "CSS Pseudo-elements"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/ALatinWebDeveloper/pen/poYWWdM",
+                    "title": "Responsive Menu"
+                },
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon Favorite Chapters Application"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "https://codepen.io/ALatinWebDeveloper/pen/poYWWdM",
+                    "title": "Responsive Menu"
+                },
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon Favorite Chapters Application"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "https://codepen.io/ALatinWebDeveloper/pen/wvOyyGg",
+                    "title": "Pseudo-classes"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson03/images/landscape.webp",
+                    "title": "WebP Learning Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson07/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation"
+                },
+                {
+                    "url": "lesson07/index.html",
+                    "title": "Course Proposal Application"
+                }
+            ]
+        }
+    ]
+}
