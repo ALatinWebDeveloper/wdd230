@@ -146,8 +146,8 @@ h3 {
 }
 
 section ul li {
-    padding: 10px;
-    list-style: decimal-leading-zero;
+    padding: .5rem .5rem .5rem 0;
+    list-style: none;
 }
 
 .card p {
