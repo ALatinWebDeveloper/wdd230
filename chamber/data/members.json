@@ -1,0 +1,68 @@
+{
+    "members": [
+        {
+            "name": "Youtube",
+            "address": "123 Main St, City A, Country A",
+            "phone": "123-456-7890",
+            "website": "[Company A Website](https://companya.com)",
+            "image": "companya.png",
+            "membership_level": "Gold",
+            "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company B",
+            "address": "456 Elm St, City B, Country B",
+            "phone": "987-654-3210",
+            "website": "[Company B Website](https://companyb.com)",
+            "image": "companyb.png",
+            "membership_level": "Silver",
+            "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "name": "Company C",
+            "address": "789 Oak Ave, City C, Country C",
+            "phone": "555-123-4567",
+            "website": "Company C Website",
+            "image": "companyc.png",
+            "membership_level": "Bronze",
+            "other_info": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        },
+        {
+            "name": "Company D",
+            "address": "321 Pine Rd, City D, Country D",
+            "phone": "777-888-9999",
+            "website": "Company D Website",
+            "image": "companyd.png",
+            "membership_level": "Platinum",
+            "other_info": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Company E",
+            "address": "567 Cedar Ln, City E, Country E",
+            "phone": "444-555-6666",
+            "website": "Company E Website",
+            "image": "companye.png",
+            "membership_level": "Diamond",
+            "other_info": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "name": "Company F",
+            "address": "987 Maple Blvd, City F, Country F",
+            "phone": "222-333-4444",
+            "website": "Company F Website",
+            "image": "companyf.png",
+            "membership_level": "Silver",
+            "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company G",
+            "address": "654 Birch Ave, City G, Country G",
+            "phone": "888-999-0000",
+            "website": "Company G Website",
+            "image": "companyg.png",
+            "membership_level": "Gold",
+            "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ]
+    
+}
