@@ -154,6 +154,23 @@ section ul li {
     text-align: center;
 }
 
+/*Styling the weather card*/
+
+.card figure {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card>p:first-of-type {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#currentTemp {
+    font-weight: bold;
+}
+
 iframe {
     width: 90%;
     margin: 0 auto 2rem auto;
