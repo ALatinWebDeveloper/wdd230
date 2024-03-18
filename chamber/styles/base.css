@@ -352,12 +352,18 @@ legend {
     width: 80%;
 }
 
-#members section:nth-child(2n+2) {
-    background-color: white;
+#members img {
+    max-height: 20vw;
+    max-width: 25vw;
 }
 
 #members section:nth-child(2n+1) {
-    background-color: #00acf0;
+    background-color: white;
+}
+
+#members section:nth-child(2n+2) {
+    background-color: #012A36;
+    color: white;
 }
 
 #displayBtns {
@@ -406,12 +412,12 @@ section p:first-child {
     width: 100%;
 }
 
-.listFormat section:nth-child(even) {
+.listFormat section:nth-child(odd) {
     background-color: white;
 }
 
-.listFormat section:nth-child(odd) {
-    background-color: #00acf0;
+.listFormat section:nth-child(even) {
+    background-color: #012A36;
 }
 
 

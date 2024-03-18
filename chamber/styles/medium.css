@@ -54,11 +54,11 @@
         margin: 0 auto;
     }
 
-    #members section:nth-child(2n + 1) {
-        background-color: #00acf0;
+    #members section:nth-child(2n + 2) {
+        background-color: #012A36;
     }
 
-    #members section:nth-child(2n + 2) {
+    #members section:nth-child(2n + 1) {
         background-color: white;
     }
 
