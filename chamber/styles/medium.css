@@ -26,7 +26,7 @@
         background: none;
         background-color: white;
     }
-    
+
     #darkPcMode {
         display: block;
         position: absolute;
@@ -45,4 +45,21 @@
         grid-template-columns: 100%;
         width: 100%;
     }
+
+    /*---------- ^ Styling members ^ ----------*/
+
+    .gridFormat {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #members section:nth-child(2n + 1) {
+        background-color: #00acf0;
+    }
+
+    #members section:nth-child(2n + 2) {
+        background-color: white;
+    }
+
 }

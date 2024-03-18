@@ -9,8 +9,8 @@
     <meta name="author" content="Juan Betancourt">
 
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -41,8 +41,14 @@
                     href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng">Scripture</a></li>
         </ul>
     </nav>
+    <button name="darkMode" id="darkPcMode"><img src="images/darkmode.png" alt="Night mode button"></button>
     <main>
-        <div id="members">
+        <h1>Members of the commercial chamber</h1>
+        <div id="displayBtns">
+            <button name="btnGrid" id="btnGrid"><img src="images/catalog.svg" alt="Grid image for btnGrid"></button>
+            <button name="btnList" id="btnList"><img src="images/list.svg" alt="List image for btnList"></button>
+        </div>
+        <div id="members" class="listFormat">
 
         </div>
     </main>

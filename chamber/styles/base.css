@@ -158,8 +158,10 @@ h2 {
 section {
     border-radius: 5px;
     padding: 1rem;
-    width: 90%;
+    width: 80%;
     text-align: center;
+    margin: 1rem auto;
+    border: solid 1px black;
 }
 
 section img {
@@ -334,4 +336,87 @@ legend {
 
 #rangeValues {
     margin: 0 0 1rem 0;
+}
+
+/*---------- ^ Styling members ^ ----------*/
+
+.gridFormat {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#members section {
+    margin: .5rem auto;
+    width: 80%;
+}
+
+#members section:nth-child(2n+2) {
+    background-color: white;
+}
+
+#members section:nth-child(2n+1) {
+    background-color: #00acf0;
+}
+
+#displayBtns {
+    display: flex;
+    justify-content: center;
+}
+
+#btnList,
+#btnGrid {
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-image: none;
+}
+
+#btnList img,
+#btnGrid img {
+    width: 2rem;
+}
+
+.listFormat {
+    display: block;
+    margin: 1rem 0;
+}
+
+.listFormat section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: -webkit-fill-available;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: .5rem 1rem;
+    align-items: center;
+}
+
+section p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.listFormat section>* {
+    height: 20%;
+    width: 100%;
+}
+
+.listFormat section:nth-child(even) {
+    background-color: white;
+}
+
+.listFormat section:nth-child(odd) {
+    background-color: #00acf0;
+}
+
+
+.listFormat section img {
+    height: 0;
+    width: 0;
+    display: none;
 }

@@ -282,4 +282,10 @@
     #rangeValues {
         margin: 0 0 1rem 0;
     }
+
+    /*---------- ^ Styling members grid ^ ----------*/
+
+    #members {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
