@@ -64,7 +64,8 @@ header {
 
 .logo {
     text-align: center;
-    height: 5rem;
+    height: 3rem;
+    padding: 2rem;
     position: relative;
 }
 
@@ -118,7 +119,7 @@ nav ul {
 }
 
 .hero {
-    width: 100%;
+    width: 80%;
     margin: 2rem auto;
 }
 
@@ -208,13 +209,15 @@ form {
     width: 90%;
 }
 
-/*---------- Join Form Large view -----------*/
+/*---------- Join Form Mobile view -----------*/
 
 h1 {
     text-align: center;
     grid-area: 1 / span 2;
     font-size: xxx-large;
     font-weight: bolder;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .joinForm {
@@ -304,9 +307,6 @@ legend {
     display: none;
 }
 
-.show {
-    display: none;
-}
 
 .tierMessage {
 
@@ -425,4 +425,30 @@ section p:first-child {
     height: 0;
     width: 0;
     display: none;
+}
+
+/*Styling the weather section*/
+
+.each {
+    display: flex;
+    justify-content: center;
+}
+
+.each img,
+#current img {
+    width: auto;
+}
+
+#banner {
+    bottom: 1px;
+    position: relative;
+    width: 100%;
+    height: 5%;
+}
+
+#close {
+    position: absolute;
+    z-index: 1;
+    right: .5rem;
+    top: 5.5rem;
 }

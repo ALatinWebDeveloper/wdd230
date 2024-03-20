@@ -25,8 +25,7 @@
 <body>
     <header>
         <button name="menu button" id="menuButton"><img src="images/openMenu.png" alt="menu button img"></button>
-        <a href="index.html"><img class="logo" src="images/placeholderLogo.webp"
-                alt="Pan American Chamber of Commerce Logo"></a>
+        <a href="index.html"><img class="logo" src="images/logo.svg" alt="Pan American Chamber of Commerce Logo"></a>
         <button name="darkMode" id="darkMode"><img src="images/darkmode.png" alt="Night mode button"></button>
     </header>
 
@@ -42,8 +41,16 @@
         </ul>
     </nav>
     <main>
+        <div id="bannerDiv" class="">
+            <button name="close" id="close">❌</button>
+            <a href="#"><img id="banner" src="images/banner.webp" alt="Main image of the company"></a>
+        </div>
+
         <h1>Pan American Chamber of Commerce</h1>
         <button name="darkMode" id="darkPcMode"><img src="images/darkmode.png" alt="Night mode button"></button>
+
+
+
         <section class="hero">
             <h2>Hero section</h2>
             <picture>
@@ -79,10 +86,20 @@
         </section>
 
         <section class="weather">
-            <h2>⛅Weather⛅</h2>
-            <img src="images/weatherPlaceholder.webp" alt="weather placeholder image">
-            
-            <p id="windChill">0 🌬️❄️</p>
+            <div id="current">
+                <p class="city"></p>
+                <p id="currentDate"></p>
+                <img id="currentIcon" src="" alt="">
+                <p id="currentDescription"></p>
+                <p id="currentTemp"></p>
+            </div>
+            <div id="tempDisplay">
+
+                <p id="windChill">0 🌬️❄️</p>
+                <div class="each">
+                    <img id="weatherIcon" src="" alt="">
+                </div>
+            </div>
 
         </section>
 
@@ -118,8 +135,8 @@
         <p>Juan Betancourt Venezuela</p>
         <p id="lastModified">Last modification: </p>
     </footer>
-    <script src="scripts/scripts.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
