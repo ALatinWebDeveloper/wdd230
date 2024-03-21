@@ -4,41 +4,43 @@ const todayDate = new Date();
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const dayOfWeek = todayDate.getDay();
 
+import { darkModePc, darkModeMobile, displayMenu, displayModified } from './scripts.js';
+
+//Display the last modified date
+
+const lastModified = new Date(document.lastModified);
+const lastModifiedString = lastModified.toLocaleDateString();
+displayModified(lastModifiedString);
+
+//Display menu function
+
+const menu = document.querySelector("#menuOptions");
+const menuButton = document.querySelector("#menuButton");
+
+menuButton.addEventListener("click", displayMenu);
+menu.addEventListener("click", displayMenu);
 
 //Darkmode Variables
 
 const darkMode = document.querySelector("#darkMode");
 const darkPcMode = document.querySelector("#darkPcMode");
-const main = document.querySelector('main');
-const footer = document.querySelector('footer');
 
-const menuButton = document.querySelector("#menuButton");
-const menu = document.querySelector("#menuOptions");
 
-menuButton.addEventListener("click", () => {
-    menuButton.classList.toggle('open');
-    menu.classList.toggle("open");
+darkMode.addEventListener("click", darkModeMobile);
 
-});
+darkPcMode.addEventListener("click", darkModePc);
 
-darkMode.addEventListener("click", () => {
-    main.classList.toggle("dark");
-    footer.classList.toggle("dark");
-});
-
-darkPcMode.addEventListener("click", () => {
-    main.classList.toggle("dark");
-    footer.classList.toggle("dark");
-});
-
+//Display banner depending on the day of the week
 
 if (dayOfWeek >= 1 && dayOfWeek <= 3) {
 
     bannerImg.classList.add('show');
 } else {
     // It's not Monday, Tuesday, or Wednesday
-    console.log('Today is not one of the specified days.');
+    bannerImg.classList.add('hidden');
 }
+
+//Close banner function
 
 closeBtn.addEventListener('click', close);
 

@@ -3,39 +3,77 @@ const CopyYear = new Date().getFullYear();
 const lastModified = new Date(document.lastModified);
 const lastModifiedString = lastModified.toLocaleDateString();
 
-document.getElementById("lastModified").textContent = "Last Modification: " + lastModifiedString;
+export function displayCopyYear() {
+    let copyrightYear = document.createElement('p');
+    let footer = document.querySelector("footer");
+    footer.appendChild(copyrightYear);
+    copyrightYear.innerHTML += ' © ' + CopyYear;
+}
+
+export function displayModified(lastModifiedString) {
+    document.getElementById("lastModified").textContent = "Last Modification: " + lastModifiedString;
+};
+
+displayModified(lastModifiedString);
+displayCopyYear();
+
+//Menu display button
+
+const menuButton = document.querySelector("#menuButton");
+const menu = document.querySelector("#menuOptions");
+
+menuButton.addEventListener("click", displayMenu);
+
+export function displayMenu() {
+
+    menuButton.classList.toggle('open');
+    menu.classList.toggle("open");
+};
 
 //Darkmode Variables
 
 const darkMode = document.querySelector("#darkMode");
 const darkPcMode = document.querySelector("#darkPcMode");
-const main = document.querySelector('main');
+const body = document.querySelector('body');
 const footer = document.querySelector('footer');
 
-const menuButton = document.querySelector("#menuButton");
-const menu = document.querySelector("#menuOptions");
+darkMode.addEventListener("click", darkModeMobile);
 
-menuButton.addEventListener("click", () => {
-    menuButton.classList.toggle('open');
-    menu.classList.toggle("open");
+export function darkModeMobile() {
 
-});
-
-darkMode.addEventListener("click", () => {
-    main.classList.toggle("dark");
+    body.classList.toggle("dark");
     footer.classList.toggle("dark");
-});
 
-darkPcMode.addEventListener("click", () => {
-    main.classList.toggle("dark");
+    let members = document.querySelectorAll('section');
+
+
+    members.forEach(member => {
+
+        member.classList.add('darkMember');
+    });
+};
+
+darkPcMode.addEventListener("click", darkModePc);
+
+export function darkModePc() {
+
+    body.classList.toggle("dark");
     footer.classList.toggle("dark");
-});
+
+    let members = document.querySelectorAll('section');
+
+
+    members.forEach(member => {
+
+        member.classList.add('darkMember');
+    });
+};
 
 // Number of visits
 
 const message = document.querySelector("#message");
 const msToDays = 84600000;
-twoDays = msToDays * 2;
+let twoDays = msToDays * 2;
 
 let lastVisit = Number(window.localStorage.getItem("lastVisit-ls")) || 0;
 let nbrVisits = Number(window.localStorage.getItem("nbrVisits-ls")) || 0;
@@ -48,7 +86,7 @@ if (nbrVisits == 0) {
 
 } else if (diff < msToDays) {
 
-    message.textContent = "Back so soon! Awesome!";
+    //message.textContent = "Back so soon! Awesome!";
 
 }
 

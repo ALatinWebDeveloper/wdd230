@@ -1,28 +1,30 @@
 //Darkmode Variables
 
+import { darkModePc, darkModeMobile, displayMenu, displayModified } from './scripts.js';
+
+//Display the last modified date
+
+const lastModified = new Date(document.lastModified);
+const lastModifiedString = lastModified.toLocaleDateString();
+displayModified(lastModifiedString);
+
+//Display menu function
+
+const menu = document.querySelector("#menuOptions");
+const menuButton = document.querySelector("#menuButton");
+
+menuButton.addEventListener("click", displayMenu);
+menu.addEventListener("click", displayMenu);
+
+//Darkmode Variables
+
 const darkMode = document.querySelector("#darkMode");
 const darkPcMode = document.querySelector("#darkPcMode");
-const main = document.querySelector('main');
-const footer = document.querySelector('footer');
 
-const menuButton = document.querySelector("#menuButton");
-const menu = document.querySelector("#menuOptions");
 
-menuButton.addEventListener("click", () => {
-    menuButton.classList.toggle('open');
-    menu.classList.toggle("open");
+darkMode.addEventListener("click", darkModeMobile);
 
-});
-
-darkMode.addEventListener("click", () => {
-    main.classList.toggle("dark");
-    footer.classList.toggle("dark");
-});
-
-darkPcMode.addEventListener("click", () => {
-    main.classList.toggle("dark");
-    footer.classList.toggle("dark");
-});
+darkPcMode.addEventListener("click", darkModePc);
 
 //Get and display information of members
 
@@ -31,24 +33,24 @@ const membersDiv = document.querySelector("#members");
 
 async function getMembers() {
 
-    response = await fetch(membersInfo);
-    data = await response.json();
+    let response = await fetch(membersInfo);
+    let data = await response.json();
 
     displayMembers(data);
-}
+};
 
 const displayMembers = (members) => {
 
     members.members.forEach(member => {
 
         //Creating elements
-        section = document.createElement('section');
-        p = document.createElement('p');
-        address = document.createElement('p');
-        img = document.createElement('img');
-        phone = document.createElement('p');
-        website = document.createElement('p');
-        membership = document.createElement('p');
+        let section = document.createElement('section');
+        let p = document.createElement('p');
+        let address = document.createElement('p');
+        let img = document.createElement('img');
+        let phone = document.createElement('p');
+        let website = document.createElement('p');
+        let membership = document.createElement('p');
 
         //Populating elements
         p.textContent = member.name;
@@ -70,7 +72,7 @@ const displayMembers = (members) => {
         section.appendChild(website);
         section.appendChild(membership);
     });
-}
+};
 
 //Grid and List buttons
 
@@ -83,11 +85,11 @@ gridBtn.addEventListener('click', displayGrid);
 function displayList() {
 
     membersDiv.classList.replace("gridFormat", 'listFormat');
-}
+};
 
 function displayGrid() {
 
     membersDiv.classList.replace("listFormat", 'gridFormat');
-}
+};
 
 getMembers();

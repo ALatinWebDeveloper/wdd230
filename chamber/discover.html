@@ -24,19 +24,17 @@
 <body>
     <header>
         <button name="menu button" id="menuButton"><img src="images/openMenu.png" alt="menu button img"></button>
-        <a href="index.html"><img class="logo" src="images/placeholderLogo.webp"
+        <a href="index.html"><img class="logo" src="images/logo.svg"
                 alt="Pan American Chamber of Commerce Logo"></a>
         <button name="darkMode" id="darkMode"><img src="images/darkmode.png" alt="Night mode button"></button>
     </header>
 
     <nav id="menu">
         <ul id="menuOptions">
-            <li><a href="#">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a target="_blank" href="https://www.byui.edu/">BYU-Idaho</a></li>
-            <li><a target="_blank"
-                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng">Scripture</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li id="currentPage"><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join Chamber</a></li>
         </ul>
     </nav>
     <main>
@@ -123,7 +121,7 @@
         <p id="lastModified"></p>
         <p id="message"></p>
     </footer>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js" type="module"></script>
 </body>
 
 </html>
