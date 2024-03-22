@@ -51,6 +51,7 @@ header {
     padding: 0.2rem;
     background: none;
     background-color: white;
+    z-index: 2;
 }
 
 #darkPcMode {
@@ -63,6 +64,7 @@ header {
     padding: 0.2rem;
     background: none;
     background-color: white;
+    z-index: 2;
 }
 
 #darkMode :hover {
@@ -100,11 +102,6 @@ nav ul {
     text-align: center;
 }
 
-#menuOptions li a:hover {
-    margin-right: 0;
-    padding-left: 0;
-}
-
 #menuOptions a {
     color: white;
     padding: 20px 10px;
@@ -138,12 +135,33 @@ nav ul {
 }
 
 .hero {
-    width: 80%;
     margin: 2rem auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.heroTitle {
+
+    position: absolute;
+    width: fit-content;
+    z-index: 1;
+    top: .5rem;
+    left: 5%;
+    background-color: var(--backgroundColor);
+    box-shadow: 1px 1px 50px var(--backgroundColor);
+    padding: 1rem;
+    border-radius: 6px;
 }
 
 .hero img {
     width: 100%;
+    border-radius: 6px 6px 0px 0px;
+    position: relative;
 }
 
 .sidebar {
@@ -152,11 +170,13 @@ nav ul {
     margin: 0 auto;
 }
 
-.ilustration img {
+.ilustrations img {
     transition: none;
+    height: 15%;
+    max-height: 300px;
 }
 
-.ilustration img:hover {
+.ilustrations img:hover {
     transform: none;
 }
 
@@ -168,11 +188,16 @@ section img {
 h1 {
     text-align: center;
     margin: 2rem 1rem;
+    font-size: x-large;
 }
 
 h2 {
     text-align: center;
     margin: 1rem 0 1rem 0;
+}
+
+h3 {
+    text-align: center;
 }
 
 section {
@@ -212,7 +237,68 @@ section p {
 footer {
     text-align: center;
     border-top: solid black 1px;
-    padding: 0.5rem;
+    padding: 1rem 0;
+    background-color: var(--menuColor);
+    color: var(--backgroundColor);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+footer p {
+    padding-top: .5rem;
+}
+
+/*---------- Styling discovery ----------*/
+
+.news {
+    width: fit-content;
+    top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#join {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+#join a {
+    padding: .5rem 1rem;
+    background-color: var(--buttonColor);
+    border-radius: 20px;
+}
+
+.events {
+    border: none;
+    box-shadow: none;
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.events article {
+    box-sizing: border-box;
+    background-color: var(--buttonColor);
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+    border-radius: 6px;
+    color: white;
+}
+
+#seeMore {
+    width: fit-content;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+#seeMore a {
+    padding: 1rem 1.5rem;
+    background-color: var(--buttonColor);
+    border-radius: 6px;
 }
 
 /*---------- Styling the form ----------*/
@@ -222,7 +308,7 @@ main {
     grid-template-columns: 100%;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 0;
 }
 
 form {
@@ -235,7 +321,7 @@ form {
 
 h1 {
     text-align: center;
-    grid-area: 1 / span 2;
+    grid-area: 1;
     font-size: xxx-large;
     font-weight: bolder;
     width: 90%;
@@ -271,6 +357,7 @@ label {
 legend {
     font-weight: bolder;
     font-size: larger;
+    color: var(--menuColor);
 }
 
 .joinForm input[type="text"],
@@ -367,7 +454,7 @@ legend {
 .gridFormat {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 100%;
     grid-gap: 1rem 0;
 }

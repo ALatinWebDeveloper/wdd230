@@ -49,7 +49,7 @@ export function darkModeMobile() {
 
     members.forEach(member => {
 
-        member.classList.add('darkMember');
+        member.classList.toggle('darkMember');
     });
 };
 
@@ -65,7 +65,7 @@ export function darkModePc() {
 
     members.forEach(member => {
 
-        member.classList.add('darkMember');
+        member.classList.toggle('darkMember');
     });
 };
 

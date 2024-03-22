@@ -73,16 +73,37 @@
     #menuOptions li a:hover {
         background-color: var(--buttonColor);
         transition: 0.3s;
-        scale: 1.2;
+        transform: scale(1.2);
         margin-right: 9%;
         padding-left: 30px;
     }
 
     /*Her*/
 
+    .news {
+        top: 6rem;
+        right: 10rem;
+        font-size: 5rem;
+        width: fit-content;
+    }
+
+    #join {
+        bottom: 5rem;
+    }
+
+    #join a {
+        font-size: 2rem;
+    }
+
+    #join a:hover {
+
+        box-shadow: 1px 1px 20px var(--buttonColor);
+    }
+
     .hero {
-        width: 85%;
-        margin: 2rem auto;
+        width: 100%;
+        margin-bottom: 2rem;
+        grid-area: 1 / span 2;
     }
 
     .hero img {
@@ -95,6 +116,7 @@
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 50% 50%;
+        grid-area: 2 / span 2;
         margin: 0 auto;
     }
 
@@ -113,15 +135,15 @@
         border-radius: 5px;
     }
 
-    .ilustration {
+    .ilustrations {
         min-height: 700px;
     }
 
-    .ilustration img {
+    .ilustrations img {
         transition: transform .2s;
     }
 
-    .ilustration img:hover {
+    .ilustrations img:hover {
         transform: scale(1.1);
     }
 

@@ -1,11 +1,11 @@
 {
     "members": [
         {
-            "name": "Youtube",
+            "name": "Vault Tec",
             "address": "901 Cherry Avenue, San Bruno, California, Estados Unidos",
             "phone": "123-456-7890",
-            "website": "https://www.youtube.com/",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg",
+            "website": "https://bethesda.net/es",
+            "image": "https://media.printables.com/media/prints/538764/images/4340950_db39c42f-d09b-4eb0-a4d5-cbe6275dc725/thumbs/cover/1200x630/png/logo.png",
             "membership_level": "Gold"
         },
         {
@@ -54,6 +54,22 @@
             "phone": "+44-193-257-8000",
             "website": "https://www.ubisoft.com/es-mx",
             "image": "https://allvectorlogo.com/img/2021/12/ubisoft-logo-horizontal-vector.png",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Umbrella Corp.",
+            "address": "Tokyo, Japan.",
+            "phone": "123-193-257-5821",
+            "website": "https://https://www.ucwrg.com/",
+            "image": "https://static-geektopia.com/storage/t/p/383/38326/816x381/umbrella_resident_evil.webp",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Ubisoft",
+            "address": "Ubisoft International 2, avenue Pasteur, 94160 Saint-Mandé",
+            "phone": "+1-234-432-9876",
+            "website": "https://www.kojimaproductions.jp/",
+            "image": "https://static.wikia.nocookie.net/deathstranding/images/9/93/Ap550x55016x121transparenttu2_6xe2.png/revision/latest?cb=20191127020255",
             "membership_level": "Gold"
         }
     ]
