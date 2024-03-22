@@ -42,10 +42,10 @@ if (dayOfWeek >= 1 && dayOfWeek <= 3) {
 
 //Close banner function
 
-closeBtn.addEventListener('click', close);
+closeBtn.addEventListener("click", close);
 
 function close() {
 
-    console.log('log');
-    bannerImg.classList.replace("show", 'hidden');
+
+    bannerImg.classList.replace("show", "hidden");
 }
