@@ -80,25 +80,26 @@ let nbrVisits = Number(window.localStorage.getItem("nbrVisits-ls")) || 0;
 
 let diff = (Date.now() - lastVisit);
 
-if (nbrVisits == 0) {
+if (message != null) {
 
-    message.textContent = "Welcome! Let us know if you have any questions.";
+    if (nbrVisits == 0) {
 
-} else if (diff < msToDays) {
-
-    //message.textContent = "Back so soon! Awesome!";
-
-}
-
-else {
-    daysAgo = ((Date.now() / msToDays) - lastVisit).toFixed(0);
-
-    if ((diff > msToDays) && (diff < twoDays)) {
-        diff = diff / msToDays;
-        message.textContent = `You last visited ${diff.toFixed(0)} day ago`;
+        message.textContent = "Welcome! Let us know if you have any questions.";
+    
+    } else if (diff < msToDays) {
+    
+        message.textContent = "Back so soon! Awesome!";
+    
     } else {
-        diff = diff / msToDays;
-        message.textContent = `You last visited ${diff.toFixed(0)} days ago`;
+        daysAgo = ((Date.now() / msToDays) - lastVisit).toFixed(0);
+    
+        if ((diff > msToDays) && (diff < twoDays)) {
+            diff = diff / msToDays;
+            message.textContent = `You last visited ${diff.toFixed(0)} day ago`;
+        } else {
+            diff = diff / msToDays;
+            message.textContent = `You last visited ${diff.toFixed(0)} days ago`;
+        }
     }
 }
 
