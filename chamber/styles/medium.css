@@ -17,24 +17,17 @@
     }
 
     #darkMode {
-        display: none;
-        position: absolute;
         right: 1rem;
         border: black solid 1px;
         border-radius: 5px;
-        padding: 0.2rem;
         background: none;
         background-color: white;
     }
 
     #darkPcMode {
-        display: block;
-        position: absolute;
         right: 2rem;
-        top: 1.8rem;
         border: black solid 1px;
         border-radius: 5px;
-        padding: 0.2rem;
         background: none;
         background-color: white;
     }
@@ -42,9 +35,16 @@
     #menuOptions li a:hover {
         background-color: #001a22;
         transition: 0.3s;
-        
+
         margin-right: 1rem;
         padding-left: 10rem;
+    }
+
+    /*---------- Styling discovery----------*/
+
+    .events {
+        display: inline-block;
+        width: 40%;
     }
 
     /*---------- Styling the form ----------*/

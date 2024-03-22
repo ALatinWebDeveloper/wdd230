@@ -6,7 +6,7 @@ let resultado = 35.74 + 0.6215 * temperature - 35.75 * (speed ** 0.16) + 0.4275 
 resultado = resultado.toFixed(2);
 
 if (speed >= 3.0 && temperature <= 50) {
-    windChill.innerHTML = `${resultado} 🌬️❄️`;
+    windChill.innerHTML = `Wind chill: ${resultado} 🌬️❄️`;
 } else {
     windChill.innerHTML = "N/A 🌬️❄️";
 }
@@ -62,12 +62,12 @@ function displayResults(data) {
             currentDate.textContent = formattedDate;
             currentIcon.setAttribute('src', iconSrc);
             currentDescription.textContent = element.weather[0].description;
-            currentTemp.textContent = `${data.list[i].main.temp}°F`;
+            currentTemp.textContent = `Temperature: ${data.list[i].main.temp}°F`;
 
             i = i + 8;
 
         } else if (i <= 28 && i >= 7) {
-            
+
             iconSrc = `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`;
 
             //Create Elements
@@ -75,13 +75,14 @@ function displayResults(data) {
             dayDisplay = document.createElement('p');
             imgDisplay = document.createElement('img');
             tempDisplay = document.createElement('p');
-            
+
 
             //Set attributes
 
 
             dayDisplay.textContent = formattedDate;
             imgDisplay.setAttribute('src', iconSrc);
+            imgDisplay.setAttribute('alt', 'Weather icon taken from api');
             tempDisplay.textContent = `${data.list[i].main.temp}°F`;
 
 

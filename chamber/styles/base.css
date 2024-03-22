@@ -48,7 +48,7 @@ header {
     right: 1rem;
     border: black solid 1px;
     border-radius: 5px;
-    padding: 0.2rem;
+    padding: 0.2rem 0.2rem 0 0.2rem;
     background: none;
     background-color: white;
     z-index: 2;
@@ -58,10 +58,10 @@ header {
     display: none;
     position: absolute;
     right: 2rem;
-    top: 1.8rem;
+    top: 1.5rem;
     border: black solid 1px;
     border-radius: 5px;
-    padding: 0.2rem;
+    padding: 0.2rem 0.2rem 0 0.2rem;
     background: none;
     background-color: white;
     z-index: 2;
@@ -142,26 +142,43 @@ nav ul {
     position: relative;
     padding: 0;
     box-sizing: border-box;
+    box-shadow: none;
     border: none;
 }
 
-.heroTitle {
+#heroTitle {
 
     position: absolute;
     width: fit-content;
     z-index: 1;
     top: .5rem;
     left: 5%;
-    background-color: var(--backgroundColor);
-    box-shadow: 1px 1px 50px var(--backgroundColor);
+    background: linear-gradient(135deg, transparent 0, var(--backgroundColor) 100%);
     padding: 1rem;
     border-radius: 6px;
+    color: black;
 }
+
 
 .hero img {
     width: 100%;
     border-radius: 6px 6px 0px 0px;
     position: relative;
+}
+
+.call ol {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.call ol li {
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.call a {
+    background-color: var(--buttonColor);
 }
 
 .sidebar {
@@ -234,6 +251,11 @@ section p {
     color: white;
 }
 
+.member img {
+
+    height: 150px;
+}
+
 footer {
     text-align: center;
     border-top: solid black 1px;
@@ -280,7 +302,8 @@ footer p {
     margin-bottom: 0;
 }
 
-.events article {
+.events article,
+.mainEvents article {
     box-sizing: border-box;
     background-color: var(--buttonColor);
     margin: 2rem 0;
@@ -295,10 +318,16 @@ footer p {
     margin: 0 auto;
 }
 
-#seeMore a {
+.mainEvents {
+    width: 90%;
+}
+
+#seeMore a,
+.call p {
     padding: 1rem 1.5rem;
     background-color: var(--buttonColor);
     border-radius: 6px;
+    margin: 1rem 0;
 }
 
 /*---------- Styling the form ----------*/
@@ -549,9 +578,14 @@ section p:first-child {
 
 /*Styling the weather section*/
 
+.weather img {
+    margin-bottom: 0;
+}
+
 .each {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
 
 .each img,

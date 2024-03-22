@@ -53,7 +53,6 @@
         right: 1rem;
         border: black solid 1px;
         border-radius: 5px;
-        padding: 0.2rem;
         background: none;
         background-color: white;
     }
@@ -62,10 +61,8 @@
         display: block;
         position: absolute;
         right: 2rem;
-        top: 1.8rem;
         border: black solid 1px;
         border-radius: 5px;
-        padding: 0.2rem;
         background: none;
         background-color: var(--backgroundColor);
     }
@@ -78,7 +75,7 @@
         padding-left: 30px;
     }
 
-    /*Her*/
+    /*Hero*/
 
     .news {
         top: 6rem;
@@ -102,12 +99,24 @@
 
     .hero {
         width: 100%;
+
         margin-bottom: 2rem;
         grid-area: 1 / span 2;
     }
 
+    #heroTitle {
+        left: 20%;
+        top: 2rem;
+        font-size: 4rem;
+    }
+
     .hero img {
         width: 100%;
+        height: 50%;
+    }
+
+    #join {
+        top: 50%;
     }
 
     /*sidebar CSS*/
@@ -179,8 +188,38 @@
         margin: 1rem 0;
     }
 
-    .call p {
+    .call ol {
         grid-area: 3 / span 2;
+        width: 80%;
+
+    }
+
+    .call p {
+        grid-area: 4 / span 2;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .mainEvents {
+
+        width: 90%;
+    }
+
+    .events,
+    .weather {
+        display: inline-block;
+        width: 40%;
+        margin: 0 auto;
+        border: none;
+        box-shadow: 1px 1px 20px #999;
+    }
+
+    #shared {
+
+        display: flex;
+        width: 89%;
+        justify-content: space-evenly;
+        margin: 0 auto;
     }
 
     .spotlights h2 {
