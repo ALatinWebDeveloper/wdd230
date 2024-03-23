@@ -34,9 +34,12 @@ const displaySpotlight = (data) => {
         logo.setAttribute('src', data[randomIndex].image);
         logo.setAttribute('alt', `Profile picture of ${data[randomIndex].name}`);
 
+        div.classList.add('member');
+
         companyName.textContent = data[randomIndex].name;
         description.textContent = data[randomIndex].description;
         quota.textContent = data[randomIndex].quota;
+
 
         //Appending elements
         spotlightSection.appendChild(div);
