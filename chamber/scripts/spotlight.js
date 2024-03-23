@@ -3,6 +3,7 @@ const spotlightSection = document.querySelector('.spotlights');
 const baseUrl = 'https://ALatinWebDeveloper.github.io/wdd230/';
 const link = "https://ALatinWebDeveloper.github.io/wdd230/chamber/data/members.json";
 
+//Call the api and store the data as a json format in a variable named DATA
 async function getMembers() {
 
     const response = await fetch(link);
@@ -16,12 +17,24 @@ async function getMembers() {
 
 }
 
+// Shuffle the valid members so the diplay members would not repeat
+function shuffleMembers(validMembers) {
+    for (let i = validMembers.length - 1; i > 0; i--) {
+        const randomNumber = Math.floor(Math.random() * (i + 1));
+        [validMembers[i], validMembers[randomNumber]] = [validMembers[randomNumber], validMembers[i]];
+    }
+    return validMembers;
+}
+
 const displaySpotlight = (data) => {
 
+    //Filter the api for the members that have a membership level of Gold or Silver
     const validMembers = data.filter((member) => member.membership_level === "Gold" || member.membership_level === "Silver");
 
+    //Store the random members so to use them as an index to search the necessary information in the api
+    const randomMembers = shuffleMembers(validMembers).slice(0, 3);
+
     for (let i = 0; i < 3; i++) {
-        let randomIndex = Math.floor(Math.random() * validMembers.length);
 
         //Create Elements
         div = document.createElement('div');
@@ -31,14 +44,14 @@ const displaySpotlight = (data) => {
         quota = document.createElement('p');
 
         //Setting attributes of elements
-        logo.setAttribute('src', data[randomIndex].image);
-        logo.setAttribute('alt', `Profile picture of ${data[randomIndex].name}`);
+        logo.setAttribute('src', randomMembers[i].image);
+        logo.setAttribute('alt', `Profile picture of ${randomMembers[i].name}`);
 
         div.classList.add('member');
 
-        companyName.textContent = data[randomIndex].name;
-        description.textContent = data[randomIndex].description;
-        quota.textContent = data[randomIndex].quota;
+        companyName.textContent = randomMembers[i].name;
+        description.textContent = randomMembers[i].description;
+        quota.textContent = randomMembers[i].quota;
 
 
         //Appending elements
@@ -48,9 +61,6 @@ const displaySpotlight = (data) => {
         div.appendChild(description);
 
     }
-
-
-
 
 }
 
