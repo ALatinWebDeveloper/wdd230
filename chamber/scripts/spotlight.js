@@ -41,7 +41,7 @@ const displaySpotlight = (data) => {
         logo = document.createElement('img');
         companyName = document.createElement('h3');
         description = document.createElement('p');
-        quota = document.createElement('p');
+        quote = document.createElement('p');
 
         //Setting attributes of elements
         logo.setAttribute('src', randomMembers[i].image);
@@ -51,7 +51,7 @@ const displaySpotlight = (data) => {
 
         companyName.textContent = randomMembers[i].name;
         description.textContent = randomMembers[i].description;
-        quota.textContent = randomMembers[i].quota;
+        quote.textContent = randomMembers[i].quote;
 
 
         //Appending elements
@@ -59,6 +59,7 @@ const displaySpotlight = (data) => {
         div.appendChild(logo);
         div.appendChild(companyName);
         div.appendChild(description);
+        div.appendChild(quote);
 
     }
 
