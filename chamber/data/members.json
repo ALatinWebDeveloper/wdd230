@@ -1,76 +1,96 @@
 {
     "members": [
         {
-            "name": "Vault Tec",
-            "address": "901 Cherry Avenue, San Bruno, California, Estados Unidos",
-            "phone": "123-456-7890",
-            "website": "https://bethesda.net/es",
-            "image": "https://media.printables.com/media/prints/538764/images/4340950_db39c42f-d09b-4eb0-a4d5-cbe6275dc725/thumbs/cover/1200x630/png/logo.png",
-            "membership_level": "Gold"
+            "gold": [
+                {
+                    "name": "Vault Tec",
+                    "address": "901 Cherry Avenue, San Bruno, California, Estados Unidos",
+                    "phone": "123-456-7890",
+                    "website": "https://bethesda.net/es",
+                    "image": "https://media.printables.com/media/prints/538764/images/4340950_db39c42f-d09b-4eb0-a4d5-cbe6275dc725/thumbs/cover/1200x630/png/logo.png",
+                    "membership_level": "Gold"
+                },
+                {
+                    "name": "Steam",
+                    "address": "Bellevue, 10400 NE 4th St, United States",
+                    "phone": "(425) 889-9642",
+                    "website": "https://store.steampowered.com/?l=spanish",
+                    "image": "https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016",
+                    "membership_level": "Gold",
+                    "description": "",
+                    "quote": ""
+                },
+                {
+                    "name": "Ubisoft",
+                    "address": "Ubisoft International 2, avenue Pasteur, 94160 Saint-Mandé",
+                    "phone": "+44-193-257-8000",
+                    "website": "https://www.ubisoft.com/es-mx",
+                    "image": "https://allvectorlogo.com/img/2021/12/ubisoft-logo-horizontal-vector.png",
+                    "membership_level": "Gold"
+                },
+                {
+                    "name": "Umbrella Corp.",
+                    "address": "Tokyo, Japan.",
+                    "phone": "123-193-257-5821",
+                    "website": "https://https://www.ucwrg.com/",
+                    "image": "https://static.wikia.nocookie.net/zombie/images/0/02/Umbrella_Corporation.webp",
+                    "membership_level": "Gold",
+                    "description": "Umbrella Corporation, a name that reverberates through the corridors of innovation and secrecy, beckons you to step into a world where boundaries blur and possibilities multiply.",
+                    "quote": "🌐🔍Become part of a legacy that defies mortality.🌆🔬"
+                },
+                {
+                    "name": "Bridges",
+                    "address": "avenue Pasteur, 94160 Florida",
+                    "phone": "+1-234-432-9876",
+                    "website": "https://www.kojimaproductions.jp/",
+                    "image": "https://static.wikia.nocookie.net/deathstranding/images/9/93/Ap550x55016x121transparenttu2_6xe2.png",
+                    "membership_level": "Gold",
+                    "description": "In the wake of the cataclysmic Death Stranding, when society crumbled like fragile paper, Bridges emerged as the beacon of resilience. Our mission? To reunite the fractured cities of America, one thread at a time.",
+                    "quote": "When the world fractures, Bridges stands unyielding. 🌟🔗"
+                }
+            ]
         },
         {
-            "name": "Riot Games",
-            "address": "Insurgentes Sur 730, Col del Valle Nte, Benito Juárez, 03103 Ciudad de México, CDMX, México",
-            "phone": "(424) 231-1111",
-            "website": "https://www.riotgames.com/en",
-            "image": "https://seeklogo.com/images/R/riot-games-logo-D89C9A9FF8-seeklogo.com.png",
-            "membership_level": "Silver"
+            "silver": [
+                {
+                    "name": "Riot Games",
+                    "address": "Insurgentes Sur 730, Col del Valle Nte, Benito Juárez, 03103 Ciudad de México, CDMX, México",
+                    "phone": "(424) 231-1111",
+                    "website": "https://www.riotgames.com/en",
+                    "image": "https://seeklogo.com/images/R/riot-games-logo-D89C9A9FF8-seeklogo.com.png",
+                    "membership_level": "Silver"
+                },
+                {
+                    "name": "Aperture Science",
+                    "address": "Cleveland, Ohio, Estados Unidos",
+                    "phone": "877-566-3886",
+                    "website": "https://www.blizzard.com/es-es/",
+                    "image": "https://data.cyclowiki.org/images/7/7e/Aperture_Science_logo.png",
+                    "membership_level": "Silver",
+                    "description": "Step into the future with Aperture Science! Our state-of-the-art research facilities are at the forefront of technological innovation, where the impossible becomes possible. From the revolutionary Portal Gun to our advanced AI systems, we're not just redefining the boundaries of science; we're making history. Be part of a legacy that transcends dimensions.",
+                    "quote": "We do what we must because we can! 🌌🔬"
+                },
+                {
+                    "name": "Epic Games",
+                    "address": "620 Crossroads Blvd, United States",
+                    "phone": "(919) 854-0070",
+                    "website": "https://www.epicgames.com/site/es-ES/home",
+                    "image": "https://www.svgrepo.com/show/424895/logo-play-epic-games.svg",
+                    "membership_level": "Silver"
+                }
+            ]
         },
         {
-            "name": "McDonalds",
-            "address": "Chicago, Illinois, Estados Unidos",
-            "phone": "(800) 244-6227",
-            "website": "https://www.mcdonalds.com/us/en-us.html",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/McDonald%27s_SVG_logo.svg/800px-McDonald%27s_SVG_logo.svg.png",
-            "membership_level": "Bronze"
-        },
-        {
-            "name": "Steam",
-            "address": "Bellevue, 10400 NE 4th St, United States",
-            "phone": "(425) 889-9642",
-            "website": "https://store.steampowered.com/?l=spanish",
-            "image": "https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016",
-            "membership_level": "Gold"
-        },
-        {
-            "name": "Blizzard entertainment",
-            "address": "Irvine, California, Estados Unidos",
-            "phone": "877-566-3886",
-            "website": "https://www.blizzard.com/es-es/",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Blizzard_Entertainment_Logo_2015.svg",
-            "membership_level": "Silver"
-        },
-        {
-            "name": "Epic Games",
-            "address": "620 Crossroads Blvd, United States",
-            "phone": "(919) 854-0070",
-            "website": "https://www.epicgames.com/site/es-ES/home",
-            "image": "https://www.svgrepo.com/show/424895/logo-play-epic-games.svg",
-            "membership_level": "Silver"
-        },
-        {
-            "name": "Ubisoft",
-            "address": "Ubisoft International 2, avenue Pasteur, 94160 Saint-Mandé",
-            "phone": "+44-193-257-8000",
-            "website": "https://www.ubisoft.com/es-mx",
-            "image": "https://allvectorlogo.com/img/2021/12/ubisoft-logo-horizontal-vector.png",
-            "membership_level": "Gold"
-        },
-        {
-            "name": "Umbrella Corp.",
-            "address": "Tokyo, Japan.",
-            "phone": "123-193-257-5821",
-            "website": "https://https://www.ucwrg.com/",
-            "image": "https://static.wikia.nocookie.net/zombie/images/0/02/Umbrella_Corporation.webp",
-            "membership_level": "Gold"
-        },
-        {
-            "name": "Bridges",
-            "address": "avenue Pasteur, 94160 Florida",
-            "phone": "+1-234-432-9876",
-            "website": "https://www.kojimaproductions.jp/",
-            "image": "https://static.wikia.nocookie.net/deathstranding/images/9/93/Ap550x55016x121transparenttu2_6xe2.png",
-            "membership_level": "Gold"
+            "bronze": [
+                {
+                    "name": "McDonalds",
+                    "address": "Chicago, Illinois, Estados Unidos",
+                    "phone": "(800) 244-6227",
+                    "website": "https://www.mcdonalds.com/us/en-us.html",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/McDonald%27s_SVG_logo.svg/800px-McDonald%27s_SVG_logo.svg.png",
+                    "membership_level": "Bronze"
+                }
+            ]
         }
     ]
 }
