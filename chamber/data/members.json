@@ -6,7 +6,9 @@
             "phone": "123-456-7890",
             "website": "https://bethesda.net/es",
             "image": "https://media.printables.com/media/prints/538764/images/4340950_db39c42f-d09b-4eb0-a4d5-cbe6275dc725/thumbs/cover/1200x630/png/logo.png",
-            "membership_level": "Gold"
+            "membership_level": "Gold",
+            "description": "Vault-Tec, also known as Vault-Tec Industries, stands as the first and last name in Vault technology. Our legacy is etched in the very bedrock of American history.",
+            "quote": "When the world ends, Vault-Tec begins. 🚀🔐"
         },
         {
             "name": "Riot Games",
@@ -14,15 +16,19 @@
             "phone": "(424) 231-1111",
             "website": "https://www.riotgames.com/en",
             "image": "https://seeklogo.com/images/R/riot-games-logo-D89C9A9FF8-seeklogo.com.png",
-            "membership_level": "Silver"
+            "membership_level": "Silver",
+            "description": "",
+            "quote": ""
         },
         {
-            "name": "McDonalds",
-            "address": "Chicago, Illinois, Estados Unidos",
+            "name": "Lethal Company",
+            "address": "Company planet, Sigurat Galaxy",
             "phone": "(800) 244-6227",
             "website": "https://www.mcdonalds.com/us/en-us.html",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/McDonald%27s_SVG_logo.svg/800px-McDonald%27s_SVG_logo.svg.png",
-            "membership_level": "Bronze"
+            "membership_level": "Bronze",
+            "description": "Calling all intrepid explorers! Lethal Company, invites you to traverse desolate moons and scavenge precious scrap. Dive into the cryptic history of exoplanets, uncover hidden loot, and transport your finds back to your ship. Just beware—the pesky bugs. Embark on this eerie odyssey, sell your discoveries to enigmatic bosses, and become a legend among the stars.",
+            "quote": "🤝Don't forget to meet the quota!💰"
         },
         {
             "name": "Steam",
@@ -30,31 +36,39 @@
             "phone": "(425) 889-9642",
             "website": "https://store.steampowered.com/?l=spanish",
             "image": "https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016",
-            "membership_level": "Gold"
+            "membership_level": "Gold",
+            "description": "Welcome to the ultimate gaming universe! Steam is where dreams collide with pixels, epic quests unfold, and friendships are forged. Dive into a vast library of games, from indie gems to AAA blockbusters. Whether you're a battle-hardened warrior or a casual explorer, **Steam** awaits. Level up, conquer worlds, and let the adventure begin!",
+            "quote": "🎮 Steam: Your Gateway to Gaming Adventures! 🎮"
         },
         {
-            "name": "Blizzard entertainment",
+            "name": "Nuka Cola",
             "address": "Irvine, California, Estados Unidos",
-            "phone": "877-566-3886",
-            "website": "https://www.blizzard.com/es-es/",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Blizzard_Entertainment_Logo_2015.svg",
-            "membership_level": "Silver"
+            "phone": "355-567-3886",
+            "website": "https://www.nukacola.nuke",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Nuka-Cola_Logo.svg",
+            "membership_level": "Silver",
+            "description": "Nuka-Cola, the Wasteland's favorite refreshment, offers a tantalizing blend of carbonation, sweetness, and a hint of radiation. Sip it down to boost your agility, collect iconic caps, and channel your inner Nuka-Girl pin-up. With flavors galore, Nuka-Cola is the official drink of the end times.",
+            "quote": "Nuka-Cola is not responsible for any side effects, mutations, or sudden cravings for bottle caps. Consume at your own risk."
         },
         {
-            "name": "Epic Games",
-            "address": "620 Crossroads Blvd, United States",
-            "phone": "(919) 854-0070",
-            "website": "https://www.epicgames.com/site/es-ES/home",
+            "name": "Helldivers",
+            "address": "Super Earth",
+            "phone": "(919) 854-DEMOCRACY",
+            "website": "https://www.arrowheadgamestudios.com/",
             "image": "https://www.svgrepo.com/show/424895/logo-play-epic-games.svg",
-            "membership_level": "Silver"
+            "membership_level": "Silver",
+            "description": "🌟 Join the Helldivers: Become part of an elite peacekeeping force! Your future begins here. Discover a heroic new career with incredible opportunities for travel and adventure you never knew existed. Enlist today and be a hero of Super Earth! 🚀🔥",
+            "quote": "For Super Earth and for DEMOCRACY!"
         },
         {
-            "name": "Ubisoft",
-            "address": "Ubisoft International 2, avenue Pasteur, 94160 Saint-Mandé",
-            "phone": "+44-193-257-8000",
-            "website": "https://www.ubisoft.com/es-mx",
-            "image": "https://allvectorlogo.com/img/2021/12/ubisoft-logo-horizontal-vector.png",
-            "membership_level": "Gold"
+            "name": "Fazbear Entertainment",
+            "address": "Hurricane, Utah, United States",
+            "phone": "1-800-FAZBEAR",
+            "website": "https://scottgames.com/",
+            "image": "https://static.wikia.nocookie.net/villains/images/9/91/FazbearEntertainmentLogoFNaFAR.jpg",
+            "membership_level": "Gold",
+            "description": "Step into a world of spine-tingling excitement! Fazbear Entertainment brings you the iconic Freddy Fazbear's Pizzeria chain. Our animatronic shows, arcade games, and tantalizing food items await your discovery. Uncover mysteries, survive the nights, and become part of our chilling legacy.",
+            "quote": "We're not responsible for any damage or missing persons—just endless thrills! 🐻🌟"
         },
         {
             "name": "Umbrella Corp.",
@@ -62,7 +76,9 @@
             "phone": "123-193-257-5821",
             "website": "https://https://www.ucwrg.com/",
             "image": "https://static.wikia.nocookie.net/zombie/images/0/02/Umbrella_Corporation.webp",
-            "membership_level": "Gold"
+            "membership_level": "Gold",
+            "description": "Umbrella Corporation, a name that reverberates through the corridors of innovation and secrecy, beckons you to step into a world where boundaries blur and possibilities multiply.",
+            "quote": "🌐🔍 Become part of a legacy that defies mortality.🌆🔬"
         },
         {
             "name": "Bridges",
@@ -70,7 +86,9 @@
             "phone": "+1-234-432-9876",
             "website": "https://www.kojimaproductions.jp/",
             "image": "https://static.wikia.nocookie.net/deathstranding/images/9/93/Ap550x55016x121transparenttu2_6xe2.png",
-            "membership_level": "Gold"
+            "membership_level": "Gold",
+            "description": "In the wake of the cataclysmic Death Stranding, when society crumbled like fragile paper, Bridges emerged as the beacon of resilience. Our mission? To reunite the fractured cities of America, one thread at a time.",
+            "quote": "Remember: When the world fractures, Bridges stands unyielding. 🌟🔗"
         }
     ]
 }
