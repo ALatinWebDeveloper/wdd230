@@ -14,6 +14,8 @@ async function getMembers() {
 
 const displaySpotlight = (data) => {
 
+    console.log(data.members[1].silver);
+
     // Generate three unique random numbers between 1 and 10 (inclusive)
     function generateUniqueRandomNumbers() {
         const numbers = Array.from({ length: 10 }, (_, i) => i + 1); // Create an array of numbers from 1 to 10
