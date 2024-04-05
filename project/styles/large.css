@@ -1,0 +1,20 @@
+@media only screen and (min-width: 48.1em) {
+
+    #services, #rental {
+        grid-template-columns: auto;
+        background-color: var(--background);
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #services h3, #rental h3 {
+        grid-area: 1 / span 4;
+    }
+
+    .vehicule {
+        margin: 1rem;
+        padding: 0 0 1rem 0;
+        border-radius: 10px;
+        border: solid 1px white;
+    }
+}

@@ -1,0 +1,45 @@
+@media only screen and (min-width: 36.01em) and (max-width: 48em) {
+
+    #services, #rental {
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--background);
+    }
+
+    #services h3 {
+        grid-area: 1 / span 2;
+    }
+
+    .service {
+        background-color: var(--menu);
+        margin: 1rem;
+        padding: 0 0 1rem 0;
+        border-radius: 10px;
+        border: solid 1px white;
+    }
+
+    .service:hover {
+        scale: 1.05;
+        transition: .2s;
+    }
+
+    .service h4{
+        border-top: none;
+    }
+
+    .service img {
+        border-radius: 10px;
+    }
+
+    .vehicule:last-child {
+
+        grid-area: 3 / span 2;
+        padding-top: 0;
+    }
+
+    #map, #aboutUs {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+    
