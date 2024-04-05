@@ -31,8 +31,9 @@
             <img src="images/logo.webp" alt="scoots logo">
             <p>Scoots</p>
         </a>
-        <button id="menubtn" class="shown">
-            <img src="images/openmenu.svg" alt="open menu hamburguer button">
+        <button id="menuBtn">
+            <img src="images/openmenu.svg" class="shown" alt="open menu hamburguer button">
+            <img src="images/closemenu.png" class="hidden" alt="close button nav button">
         </button>
     </header>
 
@@ -49,48 +50,50 @@
         <section id="hero">
             <h1>Explore and enjoy your vacations easily</h1>
             <p>Jet around in style with affordable car rentals.<br>Your adventures awaits!</p>
-            <button id="rent">Rent Now</button>
+            <button id="rentbtn">Rent Now</button>
         </section>
 
         <section id="call">
             <h3>Explore Cozumel with Scoots Car Rental</h3>
-            <p>Discover the beauty of Cozumel, Quintana Roo, Mexico with Scoots car rental. Whether you're looking for a
-                compact car for city exploration or a spacious SUV for island adventures, we have the perfect vehicle
-                for your needs. Enjoy the freedom to explore at your own pace with Scoots.
-            </p>
-            <picture>
-                <source src="images/callbig.svg" media="(min-width: 550px)">
-                <source src="images/callmedium.svg" media="(min-width: 465px)">
-                <img src="images/callsmall.svg" alt="call of action image for the small view" loading="lazy">
-            </picture>
+            <div id="callContent">
+                <p>Discover the beauty of Cozumel, Quintana Roo, Mexico with Scoots car rental. Whether you're looking for a
+                    compact car for city exploration or a spacious SUV for island adventures, we have the perfect vehicle
+                    for your needs. Enjoy the freedom to explore at your own pace with Scoots.
+                </p>
+                <picture>
+                    <source src="images/callbig.svg" media="(min-width: 550px)">
+                    <source src="images/callmedium.svg" media="(min-width: 465px)">
+                    <img src="images/callsmall.svg" alt="call of action image for the small view" loading="lazy">
+                </picture>
+            </div>
         </section>
 
         <section id="services">
             <h3>Our services</h3>
             <div class="service">
+                <img src="images/support.webp" alt="customer support image">
                 <h4>24/7 Customer support</h4>
                 <p>Choose from daily, weekly or monthly rental plans to suit your needs.</p>
-                <img src="images/support.webp" alt="customer support image">
             </div>
             <div class="service">
+                <img src="images/options.webp" alt="rental options image">
                 <h4>Flexible Rental Options</h4>
                 <p>Choose from daily, weekly or monthly rental plans to suit your needs.</p>
-                <img src="images/options.webp" alt="rental options image">
             </div>
             <div class="service">
+                <img src="images/vehicule.webp" alt="vehicule selection image">
                 <h4>Wide Vehicule Selection</h4>
                 <p>Select from a range of vehicules to find the perfect match for your trip.</p>
-                <img src="images/vehicule.webp" alt="vehicule selection image">
             </div>
             <div class="service">
-                <h4>Easy Online Booking</h4>
-                <p>Effortless reservation process through our user-friendly website.</p>
                 <img src="images/booking.webp" alt="online booking image">
+                <h4>Easy Online Booking Everywhere</h4>
+                <p>Effortless reservation process through our user-friendly website.</p>
             </div>
         </section>
 
         <section id="rental">
-            <h3>jfdsfasdf</h3>
+            <h3>Vehicules available</h3>
             <div class="vehicule">
                 <h4>Scooters</h4>
                 <p>Zip through the vibrant streets and explore hidden gems with our sleek Honda scooters. Perfect for
@@ -118,20 +121,22 @@
 
         <section id="map">
             <h3>Location</h3>
-            <!--Insert iframe from google maps-->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29895.070430696847!2d-86.98107691866555!3d20.510989045347653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20Cozumel%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sve!4v1712189293907!5m2!1ses-419!2sve"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="mapContent">
+                <p><b>Contact us:</b><br><br>scootsrental@example.com <br> +123-456-789</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21139.123070679376!2d-86.94647322900565!3d20.510148266504867!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cefc84df4b%3A0xa4a71c5399f68bd2!2sParque%20Benito%20Ju%C3%A1rez!5e0!3m2!1ses-419!2sve!4v1712356665354!5m2!1ses-419!2sve" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <section id="aboutUs">
             <h3>About Us</h3>
-            <p>Welcome to Scoots, your premier car rental service in Cozumel, Quintana Roo, Mexico. We pride ourselves
-                on providing top-notch vehicles and exceptional customer service to ensure your travel experience is
-                smooth and enjoyable.</p>
-            <p>With a wide range of cars to choose from and convenient rental options, Scoots is the perfect choice for
-                all your transportation needs in Cozumel. Trust us to make your journey unforgettable.</p>
+            <div id="aboutUsCOntent">
+                <p>Welcome to Scoots, your premier car rental service in Cozumel, Quintana Roo, Mexico. We pride ourselves
+                    on providing top-notch vehicles and exceptional customer service to ensure your travel experience is
+                    smooth and enjoyable. <br> With a wide range of cars to choose from and convenient rental options, Scoots is the perfect choice for
+                    all your transportation needs in Cozumel. Trust us to make your journey unforgettable.</p>
+    
+                <img src="images/building.webp" alt="central building of scoots">
+            </div>
         </section>
     </main>
     <footer>
@@ -142,6 +147,7 @@
             <a href="#"><img src="images/instagram.webp" alt="instagram logo"></a>
         </div>
     </footer>
+    <script src="scrypts/scrypts.js" type="module"></script>
 </body>
 
 </html>

@@ -1,10 +1,87 @@
 @media only screen and (min-width: 48.1em) {
 
+    main, header {
+        margin: 0 auto;
+    }
+
+    /*----------- Styling the nav section -----------*/
+
+    header img {
+        height: 5rem;
+    }
+
+    #logo img {
+        width: 5rem;
+    }
+
+    /*----------- Styling the nav section -----------*/
+
+    #menu {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    #menu li {
+        width: 25%;
+        display: inline-block;
+    }
+
+    #menu li:hover {
+        background-color: var(--button);
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    /*----------- Styling the hero section -----------*/
+
+    #hero {
+        background: linear-gradient(transparent 0%, white 200%), url(../images/herolarge.webp);
+    }
+
+    #rentbtn {
+        width: fit-content;
+    }
+
+    /*----------- Styling the call to action section -----------*/
+
+    #callContent, #aboutUsCOntent {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+    #callContent picture, #aboutUsCOntent img {
+        width: 50%;
+    }
+
+    #call p, #aboutUsCOntent p {
+        font-size: 1.2rem;
+        width: 50%;
+        margin-right: 4rem;
+    }
+
+    /*----------- Styling the our services and vehicules section -----------*/
+
     #services, #rental {
         grid-template-columns: auto;
         background-color: var(--background);
         margin: 0 auto;
         width: 100%;
+    }
+
+    #services {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .service {
+        background-color: var(--menu);
+        border: none;
     }
 
     #services h3, #rental h3 {
@@ -15,6 +92,53 @@
         margin: 1rem;
         padding: 0 0 1rem 0;
         border-radius: 10px;
-        border: solid 1px white;
+        border: solid 1px var(--title);
+        background-color: white;
     }
+
+    .vehicule h4 {
+        border-top: none;
+        border-bottom: 1px solid var(--title);
+    }
+
+    .vehicule:last-child {
+        border-bottom: 1px solid var(--title);
+    }
+
+    /*----------- Styling the map section -----------*/
+
+    #map {
+        padding: 0;
+    }
+
+    #mapContent, #aboutUsContent {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: 4rem auto;
+        justify-content: space-around;
+    }
+
+    #map iframe {
+
+        width: 50%;
+    }
+
+    /*----------- Styling the footer section -----------*/
+
+    footer {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    #socials {
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+    }
+
+    #socials img {
+        width: 2rem;
+    }
+    
 }

@@ -58,14 +58,14 @@ header a {
     display: none;
 }
 
-.shown {
+#menuBtn {
     display: flex;
     align-items: center;
     border: none;
     background: none;
 }
 
-#menubtn img {
+#menuBtn img, #ClosemenuBtn img {
     width: 2rem;
     margin-right: .5rem;
 }
@@ -104,10 +104,8 @@ section {
     border-bottom: solid white 1px;
 }
 
-section h3 {
+section h3, section h4 {
 
-    color: white;
-    background-color: var(--title);
     padding: 2rem 0;
 }
 
@@ -117,19 +115,22 @@ section p {
 }
 
 #hero {
-    background-image: url(../images/herosmall.webp) ;
     background: linear-gradient(transparent 0%, white 200%), url(../images/herosmall.webp);
     padding: 5rem 1.5rem;
+}
+
+#hero p {
+    margin: 2rem 0;
 }
 
 #hero h1 {
     background-color: unset;
     color: black;
-    padding: 0;
+    padding: 4rem 0;
     text-align: left;
 }
 
-#rent {
+#rentbtn {
     border: none;
     background-color: var(--button);
     padding: 1rem;
@@ -145,7 +146,7 @@ section p {
 
 #call {
 
-    padding: 4rem 0;
+    padding: 0;
 }
 
 #call p {
@@ -159,9 +160,10 @@ section p {
     grid-template-columns: 1fr;
     padding: 0;
     background-color: var(--menu);
+    border-bottom: none;
 }
 
-.service img {
+.service img, .vehicule img {
     width: 90%;
     margin: 0 auto;
     display: block;
@@ -174,31 +176,59 @@ section p {
 
 section img {
     width: 100%;
+    border-radius: 10px;
+    min-height: 50%;
 }
 
-.service {
-    padding: 2.5rem 1rem;
+.service, .vehicule {
+    padding: 2.5rem 1rem 2rem 1rem;
+    border-bottom: solid white 2px;
+}
+
+.service:last-child {
+    border-bottom: none;
 }
 
 .service h4 {
-    border-bottom: solid 1px white;
-    border-top: solid 1px white;
     padding: 2rem 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 .service p {
     padding: 0;
     width: 90%;
-    margin: 2rem auto;
+    margin: 0rem auto;
     font-size: 1.2rem;
 }
 
 /*----------- Styling summary section -----------*/
 
+#rental {
+    background-color: var(--background);
+}
+
+.vehicule {
+    border: none;
+}
+
+.vehicule h4 {
+
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.vehicule:last-child {
+    border-bottom: none;
+}
+
 /*----------- Styling location section -----------*/
 
-#map h3 {
+#map {
+    padding: 2rem 0;
+}
+
+#map h3, #aboutUs h3, #services h3, #call h3, #rental h3 {
     background-color: var(--title);
     color: white;
 }

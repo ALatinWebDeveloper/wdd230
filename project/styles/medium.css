@@ -1,11 +1,19 @@
 @media only screen and (min-width: 36.01em) and (max-width: 48em) {
 
+    #call img {
+        border-radius: 0;
+    }
+
+    #hero {
+        background: linear-gradient(transparent 0%, white 200%), url(../images/heromedium.webp);
+    }
+
     #services, #rental {
         grid-template-columns: 1fr 1fr;
         background-color: var(--background);
     }
 
-    #services h3 {
+    #services h3, #rental h3 {
         grid-area: 1 / span 2;
     }
 
@@ -22,22 +30,21 @@
         transition: .2s;
     }
 
-    .service h4{
+    .service h4 {
         border-top: none;
     }
 
     .service img {
-        border-radius: 10px;
+        margin-top: 2rem;
     }
 
     .vehicule:last-child {
 
         grid-area: 3 / span 2;
-        padding-top: 0;
     }
 
     #map, #aboutUs {
-        width: 80%;
+        width: 86%;
         margin: 0 auto;
     }
 
