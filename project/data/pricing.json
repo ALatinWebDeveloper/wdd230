@@ -1,15 +1,14 @@
 {
-    "Reservation": "Walk-In",
     "Rental Types": [
         {
             "Vehicle": "Honda Metro Scooter",
             "Max Persons": 1,
             "Half Day (3 hrs)": {
                 "Reservation": "$20",
-                "Walk-In": "$30"
+                "Walk-In": "$25"
             },
             "Full Day": {
-                "Reservation": "$25",
+                "Reservation": "$30",
                 "Walk-In": "$35"
             }
         },
@@ -18,10 +17,10 @@
             "Max Persons": 2,
             "Half Day (3 hrs)": {
                 "Reservation": "$30",
-                "Walk-In": "$40"
+                "Walk-In": "$35"
             },
             "Full Day": {
-                "Reservation": "$35",
+                "Reservation": "$40",
                 "Walk-In": "$45"
             }
         },
@@ -30,10 +29,10 @@
             "Max Persons": 2,
             "Half Day (3 hrs)": {
                 "Reservation": "$40",
-                "Walk-In": "$50"
+                "Walk-In": "$45"
             },
             "Full Day": {
-                "Reservation": "$45",
+                "Reservation": "$50",
                 "Walk-In": "$55"
             }
         },
@@ -42,10 +41,10 @@
             "Max Persons": 4,
             "Half Day (3 hrs)": {
                 "Reservation": "$50",
-                "Walk-In": "$70"
+                "Walk-In": "$60"
             },
             "Full Day": {
-                "Reservation": "$60",
+                "Reservation": "$70",
                 "Walk-In": "$80"
             }
         },
@@ -54,10 +53,10 @@
             "Max Persons": 5,
             "Half Day (3 hrs)": {
                 "Reservation": "$70",
-                "Walk-In": "$100"
+                "Walk-In": "$85"
             },
             "Full Day": {
-                "Reservation": "$85",
+                "Reservation": "$100",
                 "Walk-In": "$125"
             }
         },
@@ -66,10 +65,10 @@
             "Max Persons": 4,
             "Half Day (3 hrs)": {
                 "Reservation": "$60",
-                "Walk-In": "$85"
+                "Walk-In": "$70"
             },
             "Full Day": {
-                "Reservation": "$70",
+                "Reservation": "$85",
                 "Walk-In": "$90"
             }
         }

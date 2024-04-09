@@ -12,6 +12,10 @@ async function getPrices() {
 const displayPrices = (data) => {
 
     console.table(data);
+
+    /*Creating the variables necessary*/
+
+    
 }
 
 getPrices();
