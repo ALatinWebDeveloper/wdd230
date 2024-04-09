@@ -25,11 +25,6 @@
         border: solid 1px white;
     }
 
-    .service:hover {
-        scale: 1.05;
-        transition: .2s;
-    }
-
     .service h4 {
         border-top: none;
     }

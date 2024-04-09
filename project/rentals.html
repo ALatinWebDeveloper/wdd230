@@ -39,14 +39,88 @@
 
     <nav id="menu" class="hidden">
         <ul>
-            <li><a class="currentPage" href="index.html">Home</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="currentPage" href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
+    <main>
+        <table id="pricetbl">
+            <caption>Max Rental Pricing</caption>
+            <thead>
+                <tr>
+                    <th colspan="6">Max Rental Pricing</th>
+                </tr>
+                <tr>
+                    <th colspan="4"></th>
+                    <th>Reservation</th>
+                    <th>Reservation</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
     
+            <tbody>
+                <tr>
+                    <td>~Honda Metro Scooter</td>
+                    <td>1</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>~Honda Dio Scooter</td>
+                    <td>2</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>~Honda PCX150 Scooter</td>
+                    <td>2</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Honda Pioneer ATV</td>
+                    <td>4</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 4 door with a/c</td>
+                    <td>5</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 2 door</td>
+                    <td>4</td>
+                    <td>❌</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </main>
     
     <footer>
         <p>Made by: Juan Betancourt</p>
@@ -57,6 +131,7 @@
         </div>
     </footer>
     <script src="scrypts/scrypts.js" type="module"></script>
+    <script src="scrypts/prices.js" type="module"></script>
 </body>
 
 </html>
