@@ -47,7 +47,34 @@
     </nav>
 
     <main>
-        
+        <section id="map">
+            <h3>Location</h3>
+            <div id="mapContent">
+                <p><b>Contact us:</b><br><br>scootsrental@example.com <br> +123-456-789</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21139.123070679376!2d-86.94647322900565!3d20.510148266504867!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cefc84df4b%3A0xa4a71c5399f68bd2!2sParque%20Benito%20Ju%C3%A1rez!5e0!3m2!1ses-419!2sve!4v1712356665354!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <h3>Tell us what you think</h3>
+
+        <form method="get" action="thankyou.html" id="contactForm">
+
+
+
+                
+
+                <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                <label>last Name*<input type="text" name="lname" id="lname" required></label>
+                <label>Email<input type="email" name="email" placeholder="example@gmail.com"></label>
+                
+                <label>Leave us a comment*<textarea name="description" id="description" cols="30"
+                        rows="10" placeholder="Tell us about your organization/business..."></textarea> </label>
+                    <input type="hidden" name="date" id="date" value="Date.now">
+    
+
+            <input type="submit" name="submit" value="Join">
+
+        </form>
     </main>
 
     <footer>

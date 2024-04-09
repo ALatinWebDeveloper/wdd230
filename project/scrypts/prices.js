@@ -31,10 +31,10 @@ const displayPrices = (data) => {
 
         rentalType.textContent = rentalData.vehicle;
         capacity.textContent = rentalData.capacity;
-        reservHalfDay.textContent = rentalData.fullDay.reservation;
+        reservHalfDay.textContent = rentalData.halfDay.reservation;
         reservFullDay.textContent = rentalData.fullDay.reservation;
-        WalkInHalfDay.textContent = "❌";
-        WalkInFullDay.textContent = "❌";
+        WalkInHalfDay.textContent = rentalData.halfDay.walkIn;
+        WalkInFullDay.textContent = rentalData.fullDay.walkIn;
 
         /*Appending elements*/
 
