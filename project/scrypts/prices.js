@@ -11,12 +11,11 @@ async function getPrices() {
 
 const displayPrices = (data) => {
 
-    console.table(data);
-
+    
     /*Creating the variables necessary*/
 
     data.forEach(rentalData => {
-        console.log(rentalData.fullDay.reservation);
+        
         let tr = document.createElement("tr");
         let rentalType = document.createElement("td");
         let capacity = document.createElement("td");

@@ -48,7 +48,7 @@ header a {
     padding: .5rem;
 }
 
-.maxTemp {
+#maxTemp {
     text-align: center;
 }
 
@@ -94,6 +94,23 @@ header a {
 
 .currentPage {
     background-color: var(--button);
+}
+
+/*----------- Styling notice div below the nav -----------*/
+
+.maxTemp {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem 0;
+    background-color: #df1724;
+    color: white;
+}
+
+
+#close {
+    padding: .2rem;
 }
 
 /*----------- Styling hero section -----------*/
@@ -285,7 +302,6 @@ caption {
     border-collapse: collapse;
     background-color: var(--button);
     font-weight: bolder;
-    font-size: 2;
 }
 
 table {

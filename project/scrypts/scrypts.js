@@ -14,3 +14,16 @@ export function displayMenu() {
     menuCloseImg.classList.replace('hidden', 'shown');
     menu.classList.toggle('hidden');
 };
+
+// Close index notification of temperature (maxTemp)
+
+const temDiv = document.querySelector(".maxTemp");
+const closeBtn = document.querySelector("#close");
+
+if (temDiv != undefined) {
+
+    closeBtn.addEventListener("click", () => {
+
+        temDiv.classList.replace("maxTemp", "hidden");
+    });
+}
