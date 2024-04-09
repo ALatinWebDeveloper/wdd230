@@ -5,11 +5,11 @@
             "capacity": 1,
             "halfDay": {
                 "reservation": "$20",
-                "walk-In": "$25"
+                "walkIn": "$25"
             },
             "fullDay": {
                 "reservation": "$30",
-                "walk-In": "$35"
+                "walkIn": "$35"
             }
         },
         {
@@ -17,11 +17,11 @@
             "capacity": 2,
             "halfDay": {
                 "reservation": "$30",
-                "walk-In": "$35"
+                "walkIn": "$35"
             },
             "fullDay": {
                 "reservation": "$40",
-                "walk-In": "$45"
+                "walkIn": "$45"
             }
         },
         {
@@ -29,11 +29,11 @@
             "capacity": 2,
             "halfDay": {
                 "reservation": "$40",
-                "walk-In": "$45"
+                "walkIn": "$45"
             },
             "fullDay": {
                 "reservation": "$50",
-                "walk-In": "$55"
+                "walkIn": "$55"
             }
         },
         {
@@ -41,11 +41,11 @@
             "capacity": 4,
             "halfDay": {
                 "reservation": "$50",
-                "walk-In": "$60"
+                "walkIn": "$60"
             },
             "fullDay": {
                 "reservation": "$70",
-                "walk-In": "$80"
+                "walkIn": "$80"
             }
         },
         {
@@ -53,11 +53,11 @@
             "capacity": 5,
             "halfDay": {
                 "reservation": "$70",
-                "walk-In": "$85"
+                "walkIn": "$85"
             },
             "fullDay": {
                 "reservation": "$100",
-                "walk-In": "$125"
+                "walkIn": "$125"
             }
         },
         {
@@ -65,11 +65,11 @@
             "capacity": 4,
             "halfDay": {
                 "reservation": "$60",
-                "walk-In": "$70"
+                "walkIn": "$70"
             },
             "fullDay": {
                 "reservation": "$85",
-                "walk-In": "$90"
+                "walkIn": "$90"
             }
         }
     ]
