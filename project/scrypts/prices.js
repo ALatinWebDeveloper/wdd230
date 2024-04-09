@@ -1,4 +1,4 @@
-const url = "https://ALatinWebDeveloper.github.io/wdd230/project/data/prices.json";
+const url = "https://ALatinWebDeveloper.github.io/wdd230/project/data/pricing.json";
 const table = document.querySelector("#pricetbl");
 
 async function getPrices() {

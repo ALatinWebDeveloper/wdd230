@@ -274,7 +274,19 @@ table {
     border-collapse: collapse;
 }
 
+caption {
+    border: solid 1px black;
+    border-bottom: none;
+    padding: 1rem;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: var(--button);
+    font-weight: bolder;
+    font-size: 2;
+}
+
 #pricetbl {
 
     margin: 10% auto;
+    background-color: white;
 }

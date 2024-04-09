@@ -73,6 +73,7 @@
         background-color: var(--background);
         margin: 0 auto;
         width: 100%;
+        justify-items: center;
     }
 
     #services {
@@ -86,6 +87,7 @@
 
     #services h3, #rental h3 {
         grid-area: 1 / span 4;
+        width: 100%;
     }
 
     .vehicule {
@@ -94,11 +96,13 @@
         border-radius: 10px;
         border: solid 1px var(--title);
         background-color: white;
+        width: 70%;
     }
 
     .vehicule h4 {
         border-top: none;
         border-bottom: 1px solid var(--title);
+        width: 100%;
     }
 
     .vehicule:last-child {
