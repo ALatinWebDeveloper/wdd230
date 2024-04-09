@@ -6,7 +6,7 @@ async function getPrices() {
     let response = await fetch(url);
     let data = await response.json();
 
-    displayPrices(data);
+    displayPrices(data.rentalTypes);
 }
 
 const displayPrices = (data) => {
