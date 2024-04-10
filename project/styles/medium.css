@@ -43,7 +43,12 @@
         margin: 0 auto;
     }
 
-    
+    .reserveForm input[type="submit"] {
+
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
 
 }
     

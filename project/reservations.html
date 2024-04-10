@@ -43,7 +43,71 @@
         </ul>
     </nav>
 
+    <main>
+
+        <div id="agreements">
+
+           <div id="terms">
+
+            <h2>Rental Services and Agreements</h2>
+
+            <ol>
+                <li>A $50 security deposit is REQUIRED to confirm reservations.</li>
+                <li>A valid drivers license is REQUIRED in hand at the time of rental.</li>
+                <li>NO ONE under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is NOT included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ol>
+           </div>
+
+            <form method="get" class="reserveForm">
+
+                <fieldset>
     
+                    <legend>Reservation Information</legend>
+    
+                    <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label>Home state or Country*<input type="text" name="country" id="country" required></label>
+                    <label>Email*<input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    <label>Phone Number*<input type="tel" name="tel" id="tel" required></label>
+                    <label>Date*<input type="date" name="date" id="date" required></label>
+                    
+                </fieldset>
+                    
+                <fieldset>
+                    <legend>Reservation Details</legend>
+
+                    <label>Number*<input type="number" name="number" id="nbr" required></label>
+                    <label>Cruise Line<input type="number" name="number" id="nbr" required></label>
+                </fieldset>
+    
+                <fieldset class="period">
+                    <legend>Reservation time</legend>
+    
+                    <label><input type="radio" name="period">Half Day (3 hours)</label>
+                    <label><input type="radio" name="period">Full Day</label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Special Requirements</legend>
+                    
+                    <label>Is there anything you would like us to know?<textarea name="description" id="description" cols="30"
+                            rows="10"></textarea> </label>
+    
+                    
+                </fieldset>
+    
+                <input type="submit" name="submit" value="Make Reservaiton">
+    
+            </form>
+        </div>
+    </main>
     
     <footer>
         <p>Made by: Juan Betancourt</p>
