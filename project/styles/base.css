@@ -305,13 +305,14 @@ caption {
     border-collapse: collapse;
     background-color: var(--button);
     font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 table {
 
     margin: 5% auto;
     background-color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #tablePrice {
