@@ -353,6 +353,16 @@ form textarea {
     border-radius:  20px;
 }
 
+form input:required {
+
+    border-right: 8px solid red;
+}
+
+form input:required:valid {
+
+    border-right: 8px solid green;
+}
+
 form textarea {
     border-radius: 10px;
 }
@@ -365,7 +375,6 @@ form input[type="submit"] {
     font-size: large;
     text-align: center;
     background-color: var(--button);
-    color: white;
     border-radius: 6px;
     border: solid 1px black;
     cursor: pointer;
